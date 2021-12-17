@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="854" height="441" viewBox="0 0 854 441">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 97 146">
+      <image width="97" height="146" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAACSCAYAAABVAKQUAAAABHNCSVQICAgIfAhkiAAAA8VJREFUeF7tndFtk0EQBnEFQCd0QNwBnUAJoSJasDtKKjB3ToTyhHclT+67aCJF8LD5bj3zL0jRnn34BH9dLpcf44if4/vb+P4CH9eNP40f+H04HOafy74O5MmvAv6QZ9wp+7hSBC1hPmHf7wSKjDkPCQ/kAf/LpiVcVr2w5rlPQ8LX5s/crVwJryiHBJSFk1B4ZpVQgESXKIEmXMhXQgESXaIEmnAhXwkFSHSJEmjChXwlFCDRJUqgCRfylVCARJcogSZcyFdCARJdogSacCFfCQVIdIkSaMKFfCUUINElSqAJF/KVUIBElyiBJlzIV0IBEl2iBJrw7fznIWHZYhq6YTCWv07j9bt3dOMhoCXMFUg38FZKmGe/rkL+Gn+du6ifb//L8K4V53Ha48oVyPlq0Ul4V5wbH6aEAHlKUEIAgYAWnAQlBBAIaMFJUEIAgYAWnAQlBBAIaOE6CeHXXAMwIS2cRur1+u5ho2uuCImA0OOUMI3s8OvmAF5IC+cpYZdrrgiBgNAnJQRYUIISAggEtOAkKCGAQEALToISAggEtOAkKCGAQEALToISAggEtOAkKCGAQEALToISAggEtOAkKCGAQEALToISAggEtOAkKCGAQEALTsJ6Cc/uHa2XcN072uWa63pcTAfHt7uoqddcmZe+PvXf9V1X49fL8B5zgAMlKCGBQEAP/p+ghAACAS04CUoIIBDQgpOghAACAS3gkxB+Pfc0HFyvsa50gUrY6JeDx5UiaAnzCdvheu55SHhYNQ20hF2u5/optKuewLfn+g7BARaUoASOwE5v2eAkcM9BOVkJZVRcoRI4tuVkJZRRcYVK4NiWk5VQRsUVKoFjW05WQhkVV6gEjm05WQllVFyhEji25WQllFFxhUrg2JaTlVBGxRUqgWNbTlZCGRVXqASObTlZCWVUWKGfQouhrQd/6L2jXa7nftwNvPkg+im0t8cR3cC7fbwVk4ASAp4DJSghgEBAC06CEgIIBLTgJCghgEBAC06CEgIIBLSAT0L4FdqVCk7j8JdPoSW72OgKLYnhVvbLe+BRX37CbYnsmZawyxXaEi2o6EkJENlOrBI6tKBaJUBgO7FK6NCCapUAge3EKqFDC6pVAgS2E6uEDi2oVgkQ2E6sEjq0oFolQGA7sUro0IJqlQCB7cQqoUMLqlUCBLYTq4QOLahWCRDYTqwSOrSgWiVAYDuxSujQgmqVAIHtxCqhQ4upfaYlnEbfO7x1P4O3lorvHe1yhbaGi6liN/Bmz+FXaBmstdTzKHucu6h/Abg785RicfGCAAAAAElFTkSuQmCC"/>
+    </pattern>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#34ff00"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="icon-ui" transform="translate(12559 -8782)">
+    <rect id="Rectangle_641" data-name="Rectangle 641" width="854" height="441" transform="translate(-12559 8782)" fill="#151515"/>
+    <rect id="Group_341" data-name="Group 341" width="130" height="196" transform="translate(-12312 8889)" fill="url(#pattern)"/>
+    <text id="abs" transform="translate(-12155 9079)" fill="#fff" font-size="149" font-family="PalatinoLinotype-Bold, Palatino Linotype" font-weight="700"><tspan x="0" y="0">abs</tspan></text>
+    <text id="Personality" transform="translate(-12443 8964)" fill="#fff" font-size="16" font-family="PalatinoLinotype-Roman, Palatino Linotype"><tspan x="0" y="0">Personality</tspan></text>
+    <text id="Brevity" transform="translate(-12260 9146)" fill="#fff" font-size="16" font-family="PalatinoLinotype-Roman, Palatino Linotype"><tspan x="0" y="0">Brevity</tspan></text>
+    <text id="Clarity" transform="translate(-11868 8993)" fill="#fff" font-size="16" font-family="PalatinoLinotype-Roman, Palatino Linotype"><tspan x="0" y="0">Clarity</tspan></text>
+    <text id="Consistency" transform="translate(-12053 9146)" fill="#fff" font-size="16" font-family="PalatinoLinotype-Roman, Palatino Linotype"><tspan x="0" y="0">Consistency</tspan></text>
+    <text id="Readability" transform="translate(-12206 8872)" fill="#fff" font-size="16" font-family="PalatinoLinotype-Roman, Palatino Linotype"><tspan x="0" y="0">Readability</tspan></text>
+    <path id="Path_224" data-name="Path 224" d="M-12318.1,8959h-53.562" transform="translate(19.658 2)" fill="none" stroke="#ee2424" stroke-width="1"/>
+    <path id="Path_228" data-name="Path 228" d="M-12318.1,8959h-53.562" transform="translate(-3275 21445.664) rotate(90)" fill="none" stroke="#ee2424" stroke-width="1"/>
+    <path id="Path_225" data-name="Path 225" d="M-12276.552,8959h-95.113" transform="translate(-3051 21403.102) rotate(90)" fill="none" stroke="#47ee24" stroke-width="1"/>
+    <g id="Group_680" data-name="Group 680" transform="translate(-464.5 -1176)">
+      <rect id="Rectangle_642" data-name="Rectangle 642" width="31.413" height="195.729" transform="translate(-11717 10065)" opacity="0.21" fill="url(#linear-gradient)"/>
+      <path id="Path_221" data-name="Path 221" d="M-11718,10043.719v196" transform="translate(1 21.281)" fill="none" stroke="#37c912" stroke-width="1" stroke-dasharray="5"/>
+      <path id="Path_223" data-name="Path 223" d="M0,0V32.418" transform="translate(-11685.082 10065) rotate(90)" fill="none" stroke="#37c912" stroke-width="1"/>
+      <path id="Path_222" data-name="Path 222" d="M-11718,10043.719v196" transform="translate(32.413 21.281)" fill="none" stroke="#37c912" stroke-width="1" stroke-dasharray="5"/>
+    </g>
+    <g id="Group_681" data-name="Group 681" transform="translate(14 5)">
+      <circle id="Ellipse_55" data-name="Ellipse 55" cx="5" cy="5" r="5" transform="translate(-12316 8951)" fill="#fdd"/>
+      <circle id="Ellipse_54" data-name="Ellipse 54" cx="2" cy="2" r="2" transform="translate(-12313 8954)" fill="#ee2424" opacity="0.87"/>
+    </g>
+    <g id="Group_683" data-name="Group 683" transform="translate(77 113)">
+      <circle id="Ellipse_55-2" data-name="Ellipse 55" cx="5" cy="5" r="5" transform="translate(-12316 8951)" fill="#fdd"/>
+      <circle id="Ellipse_54-2" data-name="Ellipse 54" cx="2" cy="2" r="2" transform="translate(-12313 8954)" fill="#ee2424" opacity="0.87"/>
+    </g>
+    <g id="Group_682" data-name="Group 682" transform="translate(301 75)">
+      <circle id="Ellipse_55-3" data-name="Ellipse 55" cx="5" cy="5" r="5" transform="translate(-12316 8951)" fill="#ddffdf"/>
+      <circle id="Ellipse_54-3" data-name="Ellipse 54" cx="2" cy="2" r="2" transform="translate(-12313 8954)" fill="#47ee24" opacity="0.87"/>
+    </g>
+    <path id="Path_226" data-name="Path 226" d="M-11929.157,8887h26.008v197.422h-26.008" transform="translate(14 2)" fill="none" stroke="#00ff08" stroke-width="1"/>
+    <path id="Path_227" data-name="Path 227" d="M-11903.149,8985.711h13.69" transform="translate(14 2)" fill="none" stroke="#00ff08" stroke-width="1"/>
+  </g>
+</svg>
