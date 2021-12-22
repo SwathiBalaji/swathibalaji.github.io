@@ -3,7 +3,6 @@ import './header.css'
 import React, { Component } from "react";
 import 'antd/dist/antd.css';
 import {Link} from 'react-router-dom'
-import menu from '../../images/menu.svg'
 import icon from '../../images/icon.svg'
 
 import { Row, Col} from 'antd';
@@ -16,7 +15,7 @@ class Header extends Component {
         <Row style={{ padding: "50px", position: "fixed", zIndex: "10000000000", width: "1600px"}}  className='actual-header'>
         <Col>
         <Row>
-        <Link to="/"><img src={icon}/></Link>
+        <Link to="/"><img src={icon} alt='icon'/></Link>
         </Row>
         {/* <Row><Image src={menu} style={{ width: "30px", marginTop: "25px"}} preview={false}/></Row> */}
         </Col>

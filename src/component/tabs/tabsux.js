@@ -1,13 +1,13 @@
 import './tabs.css'
 
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import 'antd/dist/antd.css';
 import fig1 from '../../images/tabsux/fig1.png'
 import fig2 from '../../images/tabsux/fig2.png'
 import fig3 from '../../images/tabsux/fig3.png'
 import fig4 from '../../images/tabsux/fig4.png'
-import { Row, Col, Image, Tooltip } from 'antd';
-import { ArrowLeftOutlined, InfoCircleOutlined } from '@ant-design/icons';
+import { Tooltip } from 'antd';
+import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
 class tabsux extends Component {

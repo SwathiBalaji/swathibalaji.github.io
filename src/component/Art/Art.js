@@ -1,8 +1,7 @@
 import './Art.css'
 
 
-import Icon from '@ant-design/icons';
-import React, { Component } from "react";
+import React from "react";
 import kawai from '../../images/art/kawai.svg'
 import avacado from '../../images/art/avacado.png'
 import bri from '../../images/art/bri.svg'
@@ -16,16 +15,9 @@ import pc from '../../images/art/plents on pc.svg'
 import metro from '../../images/art/metro.png'
 import room from '../../images/art/room.svg'
 import puzzle from '../../images/art/puzzle.png'
-import potted from '../../images/art/potted plant.png'
 import moonchild from '../../images/art/moon.svg'
-import { Row, Col, Image, Button, Avatar, Modal } from 'antd';
-import Header from '../Header/header';
+import { Row, Col } from 'antd';
 
-import {
-    ArrowLeftOutlined, ArrowRightOutlined,
-} from '@ant-design/icons';
-import { SearchOutlined } from '@ant-design/icons';
-import ScrollAnimation from 'react-animate-on-scroll';
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import Text from 'antd/lib/typography/Text';
@@ -67,7 +59,7 @@ function ImageGallery() {
     const [lightboxDisplay, setLightBoxDisplay] = useState(false);
 
     const imageCards = dataset.map((data) => (
-        <span ><img width="200px" className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
+        <span ><img width="200px" alt='card' className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
     ));
 
     const showImage = (image, text, quote) => {
@@ -91,7 +83,7 @@ function ImageGallery() {
                 lightboxDisplay ?
                     <div id="lightbox" onClick={hideLightBox}>
                         <Row>
-                            <span><img id="lightbox-img" src={imageToShow}></img></span>
+                            <span><img id="lightbox-img" alt='to show' src={imageToShow}></img></span>
                             
                             <Row className="art-title">{textToShow}</Row>
                             <Row className="art-quote"><Text>{quoteToShow}</Text></Row>

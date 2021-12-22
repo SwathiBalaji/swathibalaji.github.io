@@ -28,13 +28,13 @@ class Home extends Component {
             
             <div style={{ padding: "150px", paddingBottom: "0px", paddingLeft: "250px"}} className='title-home'>Hello, I am Swathi</div>
             <Row style={{paddingLeft: "1050px"}}>
-                <Col><img src={homeArrow} width="100px"></img></Col>
+                <Col><img src={homeArrow} alt='home arrow' width="100px"></img></Col>
                 <Col className='sub-title-home'><span style={{padding: "15px"}}>UI/UX Desginer</span> <br/> <span style={{padding: "15px"}}>Developer</span> <br/> <span style={{padding: "15px"}}>Creative</span></Col>
             </Row>
             <br/><br/><br/>
             <div className='socials'>
                 <Row>
-                    <Col><img src={hori}></img></Col>
+                    <Col><img alt='horizontal line' src={hori}></img></Col>
                     <Col>Instagram</Col>
                     <Col style={{paddingLeft: "50px"}}>LinkedIn</Col>
                     <Col style={{paddingLeft: "50px"}}>Dribbble</Col>
@@ -43,12 +43,12 @@ class Home extends Component {
             </div>
         <Col>
         <Row style={{ padding: "250px", paddingBottom: "0px", paddingTop: "300px"}}>
-        <Col><Link to="/tabs"><img className='projects' height="290px" src={tabs}></img></Link></Col>
-        <Col><img className='projects' height="290px" src={hnf}></img></Col></Row>
+        <Col><Link to="/tabs"><img alt='tabs' className='projects' height="290px" src={tabs}></img></Link></Col>
+        <Col><img alt='hew and frost' className='projects' height="290px" src={hnf}></img></Col></Row>
 
         <Row style={{paddingLeft: "250px"}}>
-        <Col><Link to="/terrarium"><img className='projects' height="376px" src={ter}></img></Link></Col>
-        <Col><img className='projects' height="376px" src={ux}></img></Col></Row>
+        <Col><Link to="/terrarium"><img alt='terrarium' className='projects' height="376px" src={ter}></img></Link></Col>
+        <Col><img alt='ux' className='projects' height="376px" src={ux}></img></Col></Row>
         </Col>
         <Row><Link to="/tabs">Tabs</Link></Row>
 

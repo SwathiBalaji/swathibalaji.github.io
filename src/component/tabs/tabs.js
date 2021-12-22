@@ -1,7 +1,7 @@
 import './tabs.css'
 
-import React, { Component, Fragment } from "react";
-import { Col, Image, Modal, Row, Card, Avatar, Tooltip } from "antd"
+import React, { Component } from "react";
+import { Col, Image, Modal, Row, Tooltip } from "antd"
 import typing from '../../videos/typing2.mp4'
 import { Magnifier } from "react-image-magnifiers";
 import wireframeVid from '../../videos/wireframeVid.mp4'
@@ -21,9 +21,6 @@ import fig1 from '../../images/tabsux/fig1.png'
 import fig2 from '../../images/tabsux/fig2.png'
 import fig3 from '../../images/tabsux/fig3.png'
 import fig4 from '../../images/tabsux/fig4.png'
-
-
-const { Meta } = Card;
 
 class tabs extends Component {
 
@@ -126,7 +123,7 @@ class tabs extends Component {
                                         visible={this.state.moodboardModalStatus}
                                         footer={null} closable={false}
                                         onCancel={() => this.setState({ moodboardModalStatus: false })}>
-                                        <img src={moodboard} width="1150px" />
+                                        <img alt='moodboard' src={moodboard} width="1150px" />
                                     </Modal>
 
                                 </Col>
@@ -163,18 +160,18 @@ class tabs extends Component {
                                                 many, online portals like Newyork Times, Bloomberg, Economic Times, Washington Post are a few popular examples. Online payment
                                                 for these portals has significantly increased in countries like USA and Norway. Direct Message and Mail communication is also a
                                                 facet that has been growing.<br /><br />
-                                                <img src={fig1} width="600px"></img><p className="caption">Fig.1 Trend in news consumption</p>
+                                                <img alt='figure 1' src={fig1} width="600px"></img><p className="caption">Fig.1 Trend in news consumption</p>
 
                                                 Parallelly, social media has seen a big rise in consumption. 4.48 billion people currently use social media worldwide. The
                                                 average social media user engages with an average of 6.6 various social media platforms <Tooltip title="https://backlinko.com/social-media-users">[2]</Tooltip>.
                                                 Due to the curation and the entertainment that social media offers, it is able to grab the attention of people from all age
                                                 groups, genders, economic backgrounds, and ethnicities(Fig. 2).<br /><br />
-                                                <img src={fig2} width="320px"></img><p className="caption">Fig.2 Social media active users</p>
+                                                <img alt='figure 2' src={fig2} width="320px"></img><p className="caption">Fig.2 Social media active users</p>
 
                                                 Despite the promising numbers, the interaction in online journalism has seen a decline in the last few years (Fig. 3).  The
                                                 subscription model proves to be a great disadvantage for many <Tooltip title="https://www.pewresearch.org/journalism/fact-sheet/newspapers/">[3]</Tooltip>.
                                                 It has reduced the consumption in portals per year and the viewership time as well.<br />
-                                                <img src={fig3} width="600px"></img><p className="caption">Fig.3 Average minutes per visit of online newspaper portals</p>
+                                                <img alt='figure 3' src={fig3} width="600px"></img><p className="caption">Fig.3 Average minutes per visit of online newspaper portals</p>
 
                                                 One of the most important unions of these two channels is consuming news using social media. The following are the reasons why:
                                                 <ul><li>A large number of people are perfectly content with the news they can access for free and we observe a very high proportion of
@@ -186,7 +183,7 @@ class tabs extends Component {
 
                                                     <li>News updates happen in real-time on social media. Users are able to see the most relevant information pertaining to that time
                                                         in a curated fashion. The below graph is a stellar example of the information presented.</li></ul></div><br />
-                                            <img src={fig4} width="600px"></img><p className="caption">Fig.4 Holistic analysis of social media used for news consumption</p>
+                                            <img alt='figure 4' src={fig4} width="600px"></img><p className="caption">Fig.4 Holistic analysis of social media used for news consumption</p>
 
                                             <div className="sub-sub-heading">Proposed System</div>
                                             <div>The solution is a social media online news mobile
@@ -211,7 +208,7 @@ class tabs extends Component {
                                         <div className="header-content" style={{ width: "300px", paddingBottom: "40px" }}><div className="mark">User Persona</div></div>
                                         <div className="content" style={{ width: "800px", fontSize: "17px", fontWeight: "normal" }}>
                                             <div style={{ textAlign: "center", lineHeight: "8px" }}>
-                                                <img src={kunal} width="100px"></img>
+                                                <img alt='kunal' src={kunal} width="100px"></img>
                                                 <p />
                                                 <p>Kunal Nair, 54</p>
                                                 <p>Senior Manager in Banglore, India</p>
@@ -256,7 +253,7 @@ class tabs extends Component {
 
 
                                             <div style={{ textAlign: "center", lineHeight: "8px" }}>
-                                                <img src={lia} width="100px"></img>
+                                                <img alt='lia' src={lia} width="100px"></img>
                                                 <p />
                                                 <p>Lia Kim, 22</p>
                                                 <p>Marketing Student Seoul, South Korea</p>
@@ -337,18 +334,18 @@ class tabs extends Component {
 
                         <div>
                             <div className="sub-heading" style={{ paddingBottom: "70px" }}>UI Design</div></div>
-                        <div><img src={uides} className="ui-img" />
-                            <img style={{ paddingTop: "100px", width: "1200px" }} src={uides2}></img></div>
+                        <div><img alt='ui design' src={uides} className="ui-img" />
+                            <img alt='ui design 2' style={{ paddingTop: "100px", width: "1200px" }} src={uides2}></img></div>
                         <Row className="content" style={{ paddingTop: "40px" }}>
-                            <Col><a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank">Click here for User Interaction</a></Col>
-                            <Col style={{ paddingLeft: "30px" }}><a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank">Click here for Newsletter Interaction</a></Col>
+                            <Col><a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" rel='noreferrer' target="_blank">Click here for User Interaction</a></Col>
+                            <Col style={{ paddingLeft: "30px" }}><a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank" rel='noreferrer'>Click here for Newsletter Interaction</a></Col>
                         </Row>
 
 
                         <div className="sub-heading" style={{ paddingBottom: "30px" }}>Icon Design</div>
 
                         <div className="content">
-                            <img src={iconUi} width="850px"></img>
+                            <img alt='icon design' src={iconUi} width="850px"></img>
                             <Col style={{ paddingTop: "40px" }}>
                                 <Row><span style={{ fontWeight: "bold" }}>Personality&nbsp;</span><span>My main aim was to replicate real-life interactions. The Icon was
                                     inspired by news snippets arranged to make a T shape. Effectively placed with “abs”, the users are able to recognize the purpose and

@@ -1,7 +1,7 @@
 import './terrarium.css'
 
 import React, { Component} from "react";
-import { Col, Image, Row, Card } from "antd"
+import { Col, Image, Row } from "antd"
 
 import selected from '../../images/terrarium/selected.svg'
 
@@ -30,9 +30,6 @@ import terrariumvid2 from '../../images/terrarium/terrariumvid2.mp4'
 
 import { Chrono } from "react-chrono";
 
-
-const { Meta } = Card;
-
 const items = [{ title: "August 2020" }, { title: "November 2020" }, { title: "Feb 2021" }, { title: "May 2021" }, { title: "June 2021" }
 ]
 
@@ -49,7 +46,7 @@ class terrarium extends Component {
         return (
             <div>
                 <Col style={{ paddingLeft: "126px" }}>
-                    <Row><img src={terBanner} className="ui-img-ter"></img></Row>
+                    <Row><img alt='terrarium banner' src={terBanner} className="ui-img-ter"></img></Row>
                     <Row style={{ width: "700px" }}><div className="title-ter">Portable Agmented Reality gardening experience</div></Row>
                     <Row style={{ width: "700px" }}><div className="sub-title-ter"><span className="mark">See paper</span></div></Row>
                 </Col>
@@ -96,13 +93,13 @@ class terrarium extends Component {
                         <Col >
 
                             <Row>
-                                <Col><div style={{ paddingBottom: "0px" }} className="image"><img src={showcase} height="210px" /></div></Col>
-                                <Col><div style={{ paddingBottom: "0px" }} className="image"><img src={portal} width="200px" /></div></Col>
-                                <Col><div style={{ paddingBottom: "0px" }} className="image"><img src={notif} width="200px" /></div></Col>
+                                <Col><div style={{ paddingBottom: "0px" }} className="image"><img alt='showcase' src={showcase} height="210px" /></div></Col>
+                                <Col><div style={{ paddingBottom: "0px" }} className="image"><img alt='portal' src={portal} width="200px" /></div></Col>
+                                <Col><div style={{ paddingBottom: "0px" }} className="image"><img alt='notification' src={notif} width="200px" /></div></Col>
                             </Row>
 
                             <Row>
-                                <Col><div className="image" ><img src={surrounding} width="805px" /></div></Col>
+                                <Col><div className="image" ><img alt='surrounding' src={surrounding} width="805px" /></div></Col>
                             </Row>
 
                         </Col>
@@ -118,8 +115,8 @@ class terrarium extends Component {
                                     Education were going through necessary transformations and I wanted to be at the forefront of it. Thus, the seeds of inspiration to create an Edtech AR system were planted.
                                     My team’s next task was to find a project guide that aligned with our interests. Our faculty put us through a screening process where we had to create small AR EdTech projects.
                                     <br /><br/>
-                                    <span><img src={preTer1} width="230px" /></span>
-                                    <span style={{ marginLeft: "10px" }}><img src={preTer2} width="300px" /></span></div>
+                                    <span><img alt='before terrarium project' src={preTer1} width="230px" /></span>
+                                    <span style={{ marginLeft: "10px" }}><img alt='before terrarium project' src={preTer2} width="300px" /></span></div>
 
                                 <div className="content-ter-timeline">After being selected by our project guide, we tried to narrow down the scope of our research. We got the opportunity
                                     to collaborate with a startup called Cambrionics and see the technology that reached the masses. We zeroed down to create an augmented terrarium where the users could nurture
@@ -133,9 +130,9 @@ class terrarium extends Component {
                                     and distinguishable aspect of the fern. Apart from that, a transparent container, glass room, watering can, pruning tool, and other cosmetics were modeled. On the development
                                     side, my teammate worked on integrating the models in Unity and using REST APIs to trigger interactions.
                                     <br /><br/>
-                                    <span><img src={blenderTer} width="700px" /></span>
+                                    <span><img alt='blender' src={blenderTer} width="700px" /></span>
 
-                                    <span style={{ marginLeft: "10px" }}><img src={stages} width="670px" /></span>
+                                    <span style={{ marginLeft: "10px" }}><img alt='stages of fern' src={stages} width="670px" /></span>
                                 </div>
                                 <div className="content-ter-timeline">The application for POC was complete. We had completed the first round of feasibility studies among our peers. After working on
                                     their feedback, we were now ready for understanding a wider user base. We were provided with the subjects for user research. With growing excitement, it was time to showcase the application and observe the users.
@@ -154,8 +151,8 @@ class terrarium extends Component {
                                     conference was also published.
 
                                     <br /><br/>
-                                    <span><img src={nciem} width="700px" /></span>
-                                    <span style={{ marginLeft: "20px" }}><img src={ieee} width="660px" /></span>
+                                    <span><img alt='nciem' src={nciem} width="700px" /></span>
+                                    <span style={{ marginLeft: "20px" }}><img alt='ieee' src={ieee} width="660px" /></span>
                                 </div>
 
                             </Chrono>
