@@ -62,7 +62,7 @@ class tabs extends Component {
         return (
             <div>
                 <div className="body">
-                    <Image src={header} preview={false} style={{ width: "110px", paddingTop: "120px" }}></Image>
+                    <Image src={header} preview={false} style={{ width: "110px", paddingTop: "50px" }}></Image>
 
                     <div className="title">Tabs.</div>
 

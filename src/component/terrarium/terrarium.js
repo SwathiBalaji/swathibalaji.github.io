@@ -25,7 +25,7 @@ import terBanner from '../../images/terrarium/ter-banner.png'
 import result1 from '../../images/terrarium/result1.mp4'
 import result2 from '../../images/terrarium/result2.mp4'
 import result3 from '../../images/terrarium/result3.mp4'
-import terrariumvid from '../../images/terrarium/Terrarium.mp4'
+import terrariumvid from '../../videos/Ter.mp4'
 import terrariumvid2 from '../../images/terrarium/terrariumvid2.mp4'
 
 import { Chrono } from "react-chrono";

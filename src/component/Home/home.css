@@ -1,0 +1,24 @@
+
+
+.title-home {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.sub-title-home {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 20px;
+    
+}
+
+.socials {
+    font-family: Graphik,sans-serif;
+    font-size: 20px;
+}
+
+.projects:hover {
+    opacity: 20%;
+}

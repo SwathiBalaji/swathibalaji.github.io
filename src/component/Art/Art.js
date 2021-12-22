@@ -54,7 +54,6 @@ AOS.init({
 function Art() {
     return (
         <Row>
-        <Col><Header></Header></Col>
         <Col style={{ paddingLeft:"280px"}}>
             <ImageGallery /></Col>
         </Row>
@@ -85,7 +84,6 @@ function ImageGallery() {
 
     return (
         <div className="body">
-        <div className="heading">art.</div>
         <div style={{width: "1000px"}}>
             <div>{imageCards}</div>
 
