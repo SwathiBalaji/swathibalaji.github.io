@@ -1,24 +1,126 @@
 
 
-.title-home {
-    font-family: 'Monument Extended', sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-    text-align: left;
+
+.homepage {
+    background-image: url("../../images/home/bg.png");
+    background-size: 55vw;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    font-family: "Bell MT";
+    font-size: 25px;
+    line-height: 450%;    
     
 }
 
-.sub-title-home {
-    font-family: 'Monument Extended', sans-serif;
-    font-size: 20px;
-    
+.homebg {
+  background-image: linear-gradient(#FBEDD9, white)
 }
 
-.socials {
-    font-family: Graphik,sans-serif;
-    font-size: 20px;
+.tabs, .terrarium, .hnf {
+    padding: 50px;
 }
 
-.projects:hover {
-    opacity: 20%;
+.home-banner
+{
+    font-family: bely-display;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
 }
+
+.circle {
+    animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+.projects {
+   
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.aboutme {
+   
+   padding: 200px;
+   padding-top: 0px;
+
+}
+
+.title-text {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.about-me {
+    font-family: "Bell MT";
+    font-size: 25px;
+    line-height: 150%;
+
+}
+
+.body-text-large {
+    font-family: "Bell MT";
+    font-size: 30px;
+    line-height: 150%;
+}
+
+
+  .container {
+    position: relative;
+    width: 600px;
+  }
+  
+  .image {
+    display: block;
+    width: 600px;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FBEDD9;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.8;
+  }
+
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Bell MT";
+    font-size: 50px;
+    line-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  
+
+
+  

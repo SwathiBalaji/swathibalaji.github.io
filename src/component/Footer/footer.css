@@ -1,0 +1,21 @@
+.footer {
+    background-color: #FCF8EF;
+    padding: 45px;
+    font-family: "Century Gothic";
+}
+
+.link {
+    padding-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a {
+    color: black;
+}
+
+.footer-name {
+    font-size: 40px;
+    margin-top: auto;
+    margin-top: auto;
+}

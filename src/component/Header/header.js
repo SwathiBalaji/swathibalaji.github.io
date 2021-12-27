@@ -2,27 +2,28 @@ import './header.css'
 
 import React, { Component } from "react";
 import 'antd/dist/antd.css';
-import {Link} from 'react-router-dom'
-import icon from '../../images/icon.svg'
+import { Link } from 'react-router-dom'
+import icon from '../../images/header/logo.png'
 
-import { Row, Col} from 'antd';
+import { Row, Col } from 'antd';
 
 class Header extends Component {
 
 
     render() {
-    return (
-        <Row style={{ padding: "50px", position: "fixed", zIndex: "10000000000", width: "1600px"}}  className='actual-header'>
-        <Col>
-        <Row>
-        <Link to="/"><img src={icon} alt='icon'/></Link>
-        </Row>
-        {/* <Row><Image src={menu} style={{ width: "30px", marginTop: "25px"}} preview={false}/></Row> */}
-        </Col>
-        <Col style={{ paddingLeft: "1000px" }} className='header-content-1'>About</Col>
-        <Col style={{ paddingLeft: "50px" }} className='header-content-1'><Link to="/art">Art</Link></Col>
-        </Row>
-    );
+        return (
+            <Row style={{ width: "98.9vw" }} className='header'>
+                <link rel="stylesheet" href="https://use.typekit.net/qdb6vxy.css"></link>
+                <link href="//db.onlinewebfonts.com/c/bb25f84423b9515a1d475d02d2de6462?family=Bell+MT" rel="stylesheet" type="text/css" />
+                <Col flex="1250px" style={{paddingLeft: "50px"}}>
+                    <Link to="/"><img src={icon} width="40px"alt='icon' /></Link>
+                </Col>
+
+                <Col flex="100px" className='art'><Link to="/art">art</Link></Col>
+
+                <Col flex="auto" className='art'><a href='https://drive.google.com/file/d/1vYEwVdYfdsYyMQSMqbjYKd7dbxkWeeoE/view?usp=sharing' target="_blank" rel="noreferrer">cv</a></Col>
+            </Row>
+        );
     }
 };
 

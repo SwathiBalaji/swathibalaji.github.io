@@ -1,36 +1,49 @@
-.body-ter {
-    text-align: center;
-    transform: translateY(-150px);
-    font-family: Graphik,sans-serif;
-    
+
+.timeline {
+    width: 1250px;
+    align-items: center;
+    padding-left: 100px;
+    font-family: "Bell MT";  
+    color: #303030;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: normal;
+    text-align: left;
 }
 
 .ui-img-ter {
    
-    width: 1266px;
+    width: 98.9vw;
     height: auto;
-    z-index: 1;
-    transform: scale(1.2);
+    position: relative;
+    z-index: 5;
+
 }
 
 .title-ter {
-    font-size: 60px;
+    font-family: bely-display, sans-serif;
+    line-height: 90px;
+    width: 1000px;
+    padding-top: 200px;
+    padding-left: 200px;
     color: white;
-    font-weight: bold;
-    line-height:70px; 
-    padding-top: 10px;
-    transform: translateY(-500px);
-    z-index: 2;   
+    font-size: 70px;
+    position: absolute;
+    z-index: 6;
 }
 
 .sub-title-ter {
     font-size: 30px;
     color: white;
+    padding-left: 200px;
+    padding-top: 500px;
     letter-spacing: 1px;
     font-weight: normal;
-    padding-top: 10px;
-    transform: translateY(-500px);
-    z-index: 2;   
+    position: absolute;
+    z-index: 6;
+}
+.sub-title-ter:hover {
+    color: white;
 }
 
 .sub-heading-ter {
@@ -114,6 +127,27 @@
     box-decoration-break: clone;
   }
 
+  .timeline-item-title.css-zwcj87-TitleWrapper.ergoa4r0 {
+      font-size: 20px;
+      background-color: #F3E1BD;
+      padding: 10px;
+      
+  }
+
+  .css-1vv42pc-Circle:not(.using-icon).active::after 
+   {
+    background: #F3E1BD !important;
+}
+
+.css-1of8c63-TimelineItemContentWrapper {
+    filter: none !important;
+    -webkit-filter: none;
+}
+
+.css-vhsxso-VerticalCircleWrapper::after {
+    background-color: #2C2C2C !important;
+    width: 2px !important;
+}
 
 
 

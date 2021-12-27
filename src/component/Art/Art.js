@@ -46,7 +46,7 @@ AOS.init({
 function Art() {
     return (
         <Row>
-        <Col style={{ paddingLeft:"280px"}}>
+        <Col className="art-content">
             <ImageGallery /></Col>
         </Row>
     );
@@ -59,7 +59,7 @@ function ImageGallery() {
     const [lightboxDisplay, setLightBoxDisplay] = useState(false);
 
     const imageCards = dataset.map((data) => (
-        <span ><img width="200px" alt='card' className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
+        <span ><img width="150px" alt='card' className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
     ));
 
     const showImage = (image, text, quote) => {
@@ -75,8 +75,10 @@ function ImageGallery() {
 
 
     return (
-        <div className="body">
-        <div style={{width: "1000px"}}>
+        <div>
+            <link href="//db.onlinewebfonts.com/c/bb25f84423b9515a1d475d02d2de6462?family=Bell+MT" rel="stylesheet" type="text/css" />
+                    <link rel="stylesheet" href="https://use.typekit.net/qdb6vxy.css"></link>
+        
             <div>{imageCards}</div>
 
             {
@@ -92,7 +94,7 @@ function ImageGallery() {
                     </div>
                     : ""
             }
-        </div></div>
+        </div>
     );
 }
 export default Art;
