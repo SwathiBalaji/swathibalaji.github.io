@@ -77,7 +77,7 @@ render() {
                     <div className="section section3">
                         <div className='projects'>
                             <span className='heading-home'>Hew & Frost</span>
-                            <span>  is my first freelance project that was created to cope with the growing demand for orders for their Instagram-based small business.</span>
+                            <span>  is my first freelance project that was created to cope with the growing demand for orders for an Instagram-based small business.</span>
                             <br /><br />
                             <Link to="/hewandfrost"><div className='button-hnf'>See More</div></Link>
                         </div>

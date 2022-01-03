@@ -75,7 +75,7 @@ class Hewnfrost extends Component {
                 <img src={divider} alt='divider' className='divider' />
                 
                 <div className="sub-heading" >Closer Look</div>
-                <iframe title="hew and frost" src="https://drive.google.com/file/d/1dmBL1dQX49nu1xS0bv-Twi0OPiZP3Nhd/preview" width="640" height="480" allow="autoplay"></iframe> 
+                <iframe title="hew and frost" src="https://drive.google.com/file/d/1dmBL1dQX49nu1xS0bv-Twi0OPiZP3Nhd/preview" width="640" height="400" allow="autoplay"></iframe> 
             </div>
 
             <div className='closerLook'>
