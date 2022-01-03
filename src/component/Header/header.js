@@ -1,4 +1,4 @@
-import './header.css'
+import './Header.css'
 
 import React, { Component } from "react";
 import 'antd/dist/antd.css';
@@ -16,7 +16,7 @@ class Header extends Component {
                 <link rel="stylesheet" href="https://use.typekit.net/qdb6vxy.css"></link>
                 <link href="//db.onlinewebfonts.com/c/bb25f84423b9515a1d475d02d2de6462?family=Bell+MT" rel="stylesheet" type="text/css" />
                 <Col flex="1250px" style={{paddingLeft: "50px"}}>
-                    <Link to="/"><img src={icon} style={{transform: "translateY(-5px)"}} width="40px"alt='icon' /></Link>
+                    <Link to="/"><img src={icon} style={{transform: "translateY(-5px)", width: "40px"}} alt='icon' /></Link>
                 </Col>
 
                 <Col flex="100px" className='art'><Link to="/art">art</Link></Col>

@@ -2,7 +2,7 @@
 .timeline {
     width: 1250px;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 200px;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: #303030;
     font-size: 18px;
@@ -46,56 +46,9 @@
     color: white;
 }
 
-.sub-heading-ter {
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: -1px;
-    line-height: 60px;
-    text-align: left;
-    width: 850px;
-    justify-content:'center';
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;   
-      
-}
-
-
-.content-ter {
- 
-    justify-content:'center';
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    line-height: 35px;
-    font-weight: lighter;
-    width: 850px;
-    text-align: left;
-    padding-bottom: 50px;   
-}
-
-.content-ter-timeline {
- 
-    width: 1000px;
-    padding-right: 300px;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: normal;
-    padding-bottom: 10px;
-     
-}
 
 .card-content-wrapper {
     border-radius: 20px;
-}
-
-.sub-sub-heading-ter {
-    text-align: left;
-    font-size: 25px;
-    letter-spacing: -1px;
-    padding-bottom: 10px;
-    line-height: 30px;
-    color: black;
 }
 
 

@@ -3,3 +3,83 @@
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
+.banner, .problem-statement, .closerLook, .things {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    font-size: 18px;
+    line-height:40px;
+    color: #000000;
+}
+
+img {
+    width: 650px;
+}
+
+Image {
+    width: 650px;
+}
+
+.banner {
+    font-size: 14px;
+}
+
+.protolink{
+    color: blue;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.title {
+    font-family: bely-display, sans-serif;
+    font-size: 50px;
+    letter-spacing: -2px;
+    text-align: center;
+    padding: 0px;
+    
+}
+
+.sub-heading {
+    font-family: bely-display, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.divider {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 50px;
+}
+
+iframe {
+    border: none;
+}
+
+.sub-sub-heading {
+    font-family: "Bell MT";
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    line-height: 60px;
+    text-align: left;
+    
+}
+
+.tags {
+    background-color: #f3f3f3;
+    padding: 10px 15px;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+}

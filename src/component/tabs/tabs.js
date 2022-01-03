@@ -1,18 +1,19 @@
-import './tabs.css'
+import './Tabs.css'
 
 import React, { Component } from "react";
-import { Col, Divider, Image, Row, Tooltip } from "antd"
+import { Divider, Image, Tooltip } from "antd"
 import { Magnifier } from "react-image-magnifiers";
+import { Link } from 'react-router-dom';
 
-import styleguide from '../../images/styleguide.svg'
-import james from '../../images/james.png'
-import lia from '../../images/lia.png'
-import moodboard from '../../images/moodboard.png'
-import wireframe from '../../images/wireframe.png'
-import iconDesign from '../../images/icon-design.png'
-import iconUi from '../../images/icon-ui.svg'
-import uides from '../../images/ui.svg'
-import uides2 from '../../images/ui2.svg'
+import styleguide from '../../images/tabs/styleguide.svg'
+import james from '../../images/tabs/james.png'
+import lia from '../../images/tabs/lia.png'
+import moodboard from '../../images/tabs/moodboard.png'
+import wireframe from '../../images/tabs/wireframe.png'
+import iconDesign from '../../images/tabs/icon-design.png'
+import iconUi from '../../images/tabs/icon-ui.svg'
+import uides from '../../images/tabs/ui.svg'
+import uides2 from '../../images/tabs/ui2.svg'
 import single from '../../images/single.png'
 
 import AOS from 'aos'
@@ -29,43 +30,41 @@ import {
 } from '@ant-design/icons';
 
 import ProgressBar from "react-scroll-progress-bar";
-import Header from '../Header/header';
+import Header from '../Header/Header';
 
 AOS.init({
     duration: 80
 });
 
-class tabs extends Component {
+class Tabs extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
 
-
-    render() {
-        return (
-
-            <div>
+render() {
+    return (
+        <div>
                 <link href="//db.onlinewebfonts.com/c/bb25f84423b9515a1d475d02d2de6462?family=Bell+MT" rel="stylesheet" type="text/css" />
                 <link rel="stylesheet" href="https://use.typekit.net/qdb6vxy.css"></link>
                 <ProgressBar bgcolor="#303030" duration="2" height="5px" />
 
                 <Header></Header>
                 <div className="title">Tabs - a social news network</div>
+
                 <div className='banner' style={{ padding: "0px" }}>
-                    <div style={{ fontSize: "14px" }}><img alt='single' src={single} width="30px"></img> <span style={{color: "green"}}>Personal Project</span> &nbsp; <span style={{color: "grey"}}>December 2019</span>  &nbsp; &#9679; &nbsp; 10 min read </div>
-                </div>
-                
-
-                <div className='overview'>
-
-                    <div className="content">Tabs offers a comprehensive case study of existing newsletter platforms.
-                        Along with that, it offers a multi-faceted solution for the same. It
-                        takes parts of existing systems like following, social media layout
-                        for reading, sharing, and saving news channels and news tags.</div>
+                    <img alt='single' src={single} style={{width: "40px"}}></img> 
+                    <span style={{color: "green"}}>Personal Project</span>
+                    &nbsp; <span style={{color: "grey"}}>December 2019</span>  &nbsp; &#9679; &nbsp; 10 min read
                 </div>
 
-                <div><img src={divider} alt='divider' className='divider' /></div>
+                <div className='things'>
+                    Tabs offers a comprehensive case study of existing newsletter platforms. Along with that, it offers a multi-faceted solution for the same. It takes parts of existing systems like following, social media layout for reading, sharing, and saving news channels and news tags.
+                </div>
+
+                <img src={divider} alt='divider' className='divider' />
+
                 <div className="problem-statement">
                     <div className="sub-heading">Problem Statement</div>
-
-
                     <table>
                         <tr>
                             <th className="ps-heading">Outwitted</th>
@@ -82,6 +81,7 @@ class tabs extends Component {
                                 This gives the content creators more control and the consumers more flexibility.</th>
 
                         </tr>
+
                         <tr>
                             <td className="ps-heading" style={{ fontWeight: "bold" }}>Outdated</td>
                             <td className="ps-content">News apps have outdated design components and obsolete user
@@ -94,127 +94,137 @@ class tabs extends Component {
                                 and target penetration. A symbiotic and independent monetization model will consistently drive the usage.</td>
 
                         </tr>
-                    </table></div>
-                <div><img src={divider} alt='divider' className='divider' /></div>
-
-                <div className='moodboard'>
-                    <div className="sub-heading">Moodboard</div>
-                    <Image alt='moodboard' src={moodboard} width="650px" />
+                    </table>
                 </div>
-                <div><img src={divider} alt='divider' className='divider' /></div>
 
-                <div className='wireframe'>
+                <img src={divider} alt='divider' className='divider' />
+
+                <div className='things'>
+                    <div className="sub-heading">Moodboard</div>
+                    <Image alt='moodboard' src={moodboard}/>                    
+                
+                    <img src={divider} alt='divider' className='divider' />
+
                     <div className="sub-heading" style={{ paddingBottom: "0px" }}>Wireframe</div>
                     <div style={{ fontStyle: "italic", fontSize: "15px", textAlign: "center" }}><ZoomInOutlined style={{ fontSize: "12px", paddingRight: "5px" }} />please click on image to magnify</div>
-                    <Magnifier imageSrc={wireframe} style={{ width: "650px", height: "auto" }} renderOverlay={false} /></div>
-                <div><img src={divider} alt='divider' className='divider' /></div>
-                <div className='caseStudy'>
+                    <Magnifier imageSrc={wireframe} style={{ width: "650px", height: "auto" }} renderOverlay={false} />
+                    <img src={divider} alt='divider' className='divider' />
+               
                     <div className="sub-heading">Market Study</div>
                     <div className="sub-sub-heading">Introduction</div>
                     <div >Social media has become an important part of our lives. From local news to international affairs, we rely on online media to be aware of the world around us. Tabs is a comprehensive solution that combines news sharing and social media interface. It aims to offer a platform for easy and unbiased news consumption.<Tooltip title="https://www.digitalnewsreport.org/survey/2020/overview-key-findings-2020/">[1]</Tooltip></div>
+                
                     <hr />
+                    
                     <div className="sub-sub-heading">Existing System</div>
                     <div>Online journalism saw a huge spike in the last decade. From sports, culture, arts, and politics we have the world’s news one swipe away(Fig. 1). Spanning wide and catering to many, online portals like Newyork Times, Bloomberg, Economic Times, Washington Post are a few popular examples. Online payment for these portals has significantly increased in countries like USA and Norway.<br /><br />
-                        <Image alt='figure 1' src={fig1} width="500px"></Image><p className="caption">Fig.1 Trend in news consumption</p>
+                    <Image alt='figure 1' src={fig1} width="500px"/><p className="caption">Fig.1 Trend in news consumption</p>
 
-                        Parallelly, social media has seen a big rise in consumption. 4.48 billion people currently use social media worldwide. The average user engages with an average of 6.6 various social media platforms. <Tooltip title="https://backlinko.com/social-media-users">[2]</Tooltip>.
-                        It has the power to hold the attention of people from all age groups, genders, economic backgrounds, and ethnicities(Fig. 3)<br /><br />
-                        <Image alt='figure 2' src={fig2} width="320px"></Image><p className="caption">Fig.2 Social media active users</p>
+                    Parallelly, social media has seen a big rise in consumption. 4.48 billion people currently use social media worldwide. The average user engages with an average of 6.6 various social media platforms. <Tooltip title="https://backlinko.com/social-media-users">[2]</Tooltip>.
+                    It has the power to hold the attention of people from all age groups, genders, economic backgrounds, and ethnicities(Fig. 3)<br /><br />
+                    <Image alt='figure 2' src={fig2} width="320px"/><p className="caption">Fig.2 Social media active users</p>
 
-                        Despite looking good on paper, the interaction in online journalism has seen a decline in the last few years. The subscription model proves to be a great disadvantage for many. <Tooltip title="https://www.pewresearch.org/journalism/fact-sheet/newspapers/">[3]</Tooltip>.
-                        It has reduced the consumption in portals per year and the viewership time.<br />
-                        <Image alt='figure 3' src={fig3} width="500px"></Image><p className="caption">Fig.3 Average minutes per visit of online newspaper portals</p>
+                    Despite looking good on paper, the interaction in online journalism has seen a decline in the last few years. The subscription model proves to be a great disadvantage for many. <Tooltip title="https://www.pewresearch.org/journalism/fact-sheet/newspapers/">[3]</Tooltip>.
+                    It has reduced the consumption in portals per year and the viewership time.<br />
+                    <Image alt='figure 3' src={fig3} width="500px"/><p className="caption">Fig.3 Average minutes per visit of online newspaper portals</p>
 
-                        One of the most important intersection points we have to highlight is consuming news using social media. A large number of people are perfectly content with the news they can access for free and we observe a very high proportion of non-subscribers (40% in the USA and 50% in the UK) who say that nothing could persuade them to pay.
-                        The consumer interface of news portals is not youthful and artistically economic. Those between 18–24 have a weak connection with websites and apps and are more than twice as likely to prefer to access news via social media(Fig. 2). News updates happen in real-time on social media. Users can see the most relevant information about that time.</div><br />
-                    <Image alt='figure 4' src={fig4} width="500px"></Image><p className="caption">Fig.4 Holistic analysis of social media used for news consumption</p>
+                    One of the most important intersection points we have to highlight is consuming news using social media. A large number of people are perfectly content with the news they can access for free and we observe a very high proportion of non-subscribers (40% in the USA and 50% in the UK) who say that nothing could persuade them to pay.
+                    The consumer interface of news portals is not youthful and artistically economic. Those between 18–24 have a weak connection with websites and apps and are more than twice as likely to prefer to access news via social media(Fig. 2). News updates happen in real-time on social media. Users can see the most relevant information about that time.</div><br />
+                    <Image alt='figure 4' src={fig4} width="500px"/><p className="caption">Fig.4 Holistic analysis of social media used for news consumption</p>
+                
                     <hr />
+                    
                     <div className="sub-sub-heading">Proposed System</div>
                     <div>Tabs is a propitious solution. Tabs main focal point is that it provides news from different organisations in one place. Reporters can upload articles whenever they want to. The Org accounts can view statistics regarding views, clicks, shares, etc. Users can follow tags, organizations, or have content curated on their behalf. The Explore page offers the trending news according to their locality. Users can share and save posts as well. Apart from that, Tabs surpasses the subscription model by providing free advertisements as a means of income.</div>
-                </div>
 
-                <div><img src={divider} alt='divider' className='divider' /></div>
+                    <img src={divider} alt='divider' className='divider' />
 
-                <div className='persona'>
                     <div className="sub-heading">User Persona</div>
-                    <Image src={james} width="650px"></Image><br /><br />
-                    <Image src={lia} width="650px"></Image>
-                </div>
-                <div><img src={divider} alt='divider' className='divider' /></div>
-
-                <div className='styleguide'>
+                    <Image src={james}/>
+                    <br /><br />
+                    <Image src={lia}/>
+                
+                    <img src={divider} alt='divider' className='divider' />
+   
                     <div className="sub-heading">Style Guide</div>
-                    <Image alt='moodboard' src={styleguide} width="650px" style={{ padding: "100px", backgroundColor: "black" }} />
-                </div>
+                    <Image alt='moodboard' src={styleguide} style={{ padding: "100px", backgroundColor: "black" }} />
 
-                <div><img src={divider} alt='divider' className='divider' /></div>
-
-                <div className='proposedSystem'>
+                    <img src={divider} alt='divider' className='divider' />
+                
                     <div className="sub-heading">Tabs</div>
-                    <div className="content">
-                        I strongly believe that users need to have precedence and control over what they see. It is important to see the right news at the right time. It is important to know of a local forest fire in some circumstances and about the stock market in others. Navigation, especially for e-news portals needs to have quick and accurate delivery. Newspapers may not be able to reach every whistle-stop but social platforms can. My main goal through this project is to leverage such a powerful resource to uplift and bolster online journalism.
+                    
+                    I strongly believe that users need to have precedence and control over what they see. It is important to see the right news at the right time. It is important to know of a local forest fire in some circumstances and about the stock market in others. Navigation, especially for e-news portals needs to have quick and accurate delivery. Newspapers may not be able to reach every whistle-stop but social platforms can. My main goal through this project is to leverage such a powerful resource to uplift and bolster online journalism.
 
+                    <Divider orientation="left">UI</Divider>
+                    I take into account several aspects while choosing the design system. The target audience, the use case, and the form factor are a few that I consider. My target audience is between the age of 15 to 45. The main use case is to provide the news in a compact, familiar, and accurate manner. In this project, I focus on the mobile-based application design but I maintain the extensibility for all components. One of the biggest mistakes that designers make is ignoring the life expectancy of the design. Hence I stay within the boundaries of soft UI- using curved borders, muted shadows, adequate spacing, etc. To attract my users, I give the design a sporty, buoyant touch. I make the system dark-themed, add gradient button backgrounds, and card view components. I arrange them using a generic social media wireframe.
 
-                        <Divider orientation="left">UI</Divider>
-                        I take into account several aspects while choosing the design system. The target audience, the use case, and the form factor are a few that I consider. My target audience is between the age of 15 to 45. The main use case is to provide the news in a compact, familiar, and accurate manner. In this project, I focus on the mobile-based application design but I maintain the extensibility for all components. One of the biggest mistakes that designers make is ignoring the life expectancy of the design. Hence I stay within the boundaries of soft UI- using curved borders, muted shadows, adequate spacing, etc. To attract my users, I give the design a sporty, buoyant touch. I make the system dark-themed, add gradient button backgrounds, and card view components. I arrange them using a generic social media wireframe.
+                    <Divider orientation="left">UX</Divider>
+                    When it comes to interactions, I go by the rulebook. My main goal is to make the platform usable, useful, and desirable and the content findable, credible, and valuable. User accounts can follow organizations, tags (Tabbed), or see relevant hot news in the Explore and Trending pages. The Home page shows the card view list of content published by the news networks users follow. The whole post can be seen by tapping into each card.
+                    Here, users can see the number of views, share, or save the post. Posts are only published and maintained by the news network accounts (Org account). Reporter accounts connect journalists to their organization where they will be listed as a reporter. They can publish posts via the straightforward content creation interface. They can add quotes, attach multimedia and add tags. Furthermore, these accounts have access to important insight regarding post reads, profile visits, shares, etc. This system makes it easy to extract valuable performance metrics using AI.
 
-                        <Divider orientation="left">UX</Divider>
-                        When it comes to interactions, I go by the rulebook. My main goal is to make the platform usable, useful, and desirable and the content findable, credible, and valuable. User accounts can follow organizations, tags (Tabbed), or see relevant hot news in the Explore and Trending pages. The Home page shows the card view list of content published by the news networks users follow. The whole post can be seen by tapping into each card.
-                        Here, users can see the number of views, share, or save the post. Posts are only published and maintained by the news network accounts (Org account). Reporter accounts connect journalists to their organization where they will be listed as a reporter. They can publish posts via the straightforward content creation interface. They can add quotes, attach multimedia and add tags. Furthermore, these accounts have access to important insight regarding post reads, profile visits, shares, etc. This system makes it easy to extract valuable performance metrics using AI.
-
-                        <Divider orientation="left">Monetization Model</Divider>
-                        In my opinion, news needs to be available to all. By adding a price tag, we make it a commodity whereas I view it as a necessity. The UX Market study highlights how the subscription model has done more harm than good for news organizations. Consequently, the advertisement model is an ideal fit. The increase in the number of content creators worldwide is exemplary of that. The two types of ads that I inject in the infancy of the application are native and affiliate ads. Native ads make for a consistent user interface. Affiliate marketing is a valuable alternative source of advertisement. This is introduced in slow doses to maintain a positive user experience.
-                        The subscription model does not hold the content creators accountable. The glamorization of news in an attempt to attract users has backfired. People find it hard to trust online journalism. It has also been the source of several avoidable anxieties. The advertisement model will open up the companies to feedback and healthy competition. This is the right step towards honest and credible journalism.
-
-                    </div>
-
+                    <Divider orientation="left">Monetization Model</Divider>
+                    In my opinion, news needs to be available to all. By adding a price tag, we make it a commodity whereas I view it as a necessity. The UX Market study highlights how the subscription model has done more harm than good for news organizations. Consequently, the advertisement model is an ideal fit. The increase in the number of content creators worldwide is exemplary of that. The two types of ads that I inject in the infancy of the application are native and affiliate ads. Native ads make for a consistent user interface. Affiliate marketing is a valuable alternative source of advertisement. This is introduced in slow doses to maintain a positive user experience.
+                    The subscription model does not hold the content creators accountable. The glamorization of news in an attempt to attract users has backfired. People find it hard to trust online journalism. It has also been the source of several avoidable anxieties. The advertisement model will open up the companies to feedback and healthy competition. This is the right step towards honest and credible journalism.
+                   
                 </div>
 
-                <div><img src={divider} alt='divider' className='divider' /></div>
+                <img src={divider} alt='divider' className='divider' />
 
                 <div className="sub-heading">Prototype</div>
                 <img alt='ui design' src={uides} className="ui-img" />
-                <div className='ui' style={{ paddingTop: "50px" }}><Image width="650px" alt='ui design 2' src={uides2} className='content'></Image>
-                    <Row className="content" >
-                        <Col><a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" rel='noreferrer' target="_blank" className='protolink'>Click here for User Interaction</a></Col>
-                        <Col style={{ paddingLeft: "30px" }}><a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank" rel='noreferrer' className='protolink'>Click here for Newsletter Interaction</a></Col>
-                    </Row></div>
 
+                <br/><br/>
+
+                <div className='things'>
+                <Image  alt='ui design 2' src={uides2}/>
+ 
+                <a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" rel='noreferrer' target="_blank" className='protolink'>Click here for User Interaction</a>
+                <a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank" rel='noreferrer' className='protolink'>Click here for Newsletter Interaction</a>
+                  
                 <div><img src={divider} alt='divider' className='divider' /></div>
-                <div className='iconDes'>
-                    <div className="sub-heading">Logo Design</div>
-
-                    <div className="content">
-                    <Image style={{ width: "650px" }} src={iconDesign}></Image>
-                        <Image alt='icon design' src={iconUi} width="650px" style={{ paddingBottom: "20px" }}></Image>
-                        The following are the main factors that I took into account while making the logo for Tabs.
-                        <Divider orientation="left">Brevity</Divider>
-                        I maintain the usage of the whole word and not a single letter or symbol for the logo. This is to subconsciously familiarize the user with the brand. Future iterations will restrict the logo to just the “T”. No other lines or borders are present to make the logo as simple and compact as possible.
-
-                        <Divider orientation="left">Personality</Divider>
-                        The logo and the name of the application are inspired by a common English phrase- “Keeping Tabs”. We keep tabs on what we find relevant. We also keep several tabs open on our computers because we want to revisit them sometime soon. Similarly, Tabs is a platform where you can curate the news you want to read. The logo was inspired by the UI skeleton that we use to represent walls of text.
-
-                        <Divider orientation="left">Clarity and Readability</Divider>
-                        The color story, curved edges, and text style endorse the consistency of the application. The entities are placed at the right distance to provide clarity and readability. It is also scalable for all intents and purposes.
-                    </div>
-                </div>
-
-                <div><img src={divider} alt='divider' className='divider' /></div>
-
-
-                <div className='closerLook'>
-                    <div className="sub-heading" >Closer Look</div>
-                    <iframe title='Tabs' src="https://drive.google.com/file/d/1zO7E6gntpDsw8ZP4pYNKnIrnWXWk7J1-/preview" width="640" height="400" allow="autoplay"></iframe>
+                
+                <div className="sub-heading">Logo Design</div>
                     
-                    <div style={{paddingTop: "20px"}}><span className='tags'>UI Design</span>    <span className='tags'>UX Research</span>    <span className='tags'>Logotyping</span>    <span className='tags'>Style Guide</span>
-                    </div>
-                </div>
-                { /*<div className='sticky'><div style={{paddingBottom: "5px"}}>UI Design, UX Research, Logotyping</div><hr/></div> */}
+                <Image src={iconDesign}/>
+                <Image alt='icon design' src={iconUi}/>
+                <br/>
+                The following are the main factors that I took into account while making the logo for Tabs.
+                
+                <Divider orientation="left">Brevity</Divider>
+                I maintain the usage of the whole word and not a single letter or symbol for the logo. This is to subconsciously familiarize the user with the brand. Future iterations will restrict the logo to just the “T”. No other lines or borders are present to make the logo as simple and compact as possible.
 
+                <Divider orientation="left">Personality</Divider>
+                The logo and the name of the application are inspired by a common English phrase- “Keeping Tabs”. We keep tabs on what we find relevant. We also keep several tabs open on our computers because we want to revisit them sometime soon. Similarly, Tabs is a platform where you can curate the news you want to read. The logo was inspired by the UI skeleton that we use to represent walls of text.
+
+                <Divider orientation="left">Clarity and Readability</Divider>
+                The color story, curved edges, and text style endorse the consistency of the application. The entities are placed at the right distance to provide clarity and readability. It is also scalable for all intents and purposes.
+                                    
+                <div><img src={divider} alt='divider' className='divider' /></div>
+                
+                <div className="sub-heading" >Closer Look</div>
+                <iframe title='tabs' src="https://drive.google.com/file/d/1aATZUCpY7QigC-FZr5YaowD4_rpyPc_O/preview" width="640" height="400" allow="autoplay"></iframe>                    
             </div>
 
-        );
-    }
+            { /*<div className='sticky'><div style={{paddingBottom: "5px"}}>UI Design, UX Research, Logotyping</div><hr/></div> */}
+
+            <div className='closerLook'>
+                <br/>
+                <span className='tags'>UX Research</span> 
+                <span className='tags'>UI Design</span>    
+                <span className='tags'>Design System</span> 
+            </div>
+
+            <br/><br/>
+            <div className='things'>
+                See other projects<br/>
+                <Link to='/casestudy'><span className='title' style={{fontSize: "35px"}}>Case Study</span></Link>
+                &nbsp; <span style={{fontSize: "25px"}}>&#9679;</span> &nbsp;<Link to='/hewandfrost'><span className='title' style={{fontSize: "35px"}}>Hew and Frost</span></Link>
+                &nbsp; <span style={{fontSize: "25px"}}>&#9679;</span> &nbsp;<Link to='/terrarium'><span className='title' style={{fontSize: "35px"}}>Terrarium</span></Link>
+            </div>
+
+        </div>
+
+    ); }
 }
 
-export default tabs;
+export default Tabs;

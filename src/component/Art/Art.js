@@ -1,7 +1,7 @@
 import './Art.css'
 
 
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import kawai from '../../images/art/kawai.svg'
 import avacado from '../../images/art/avacado.png'
 import bri from '../../images/art/bri.svg'
@@ -21,7 +21,7 @@ import { Row, Col } from 'antd';
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import Text from 'antd/lib/typography/Text';
-import Header from '../Header/header';
+import Header from '../Header/Header';
 const { useState } = React;
 
 const dataset = [
@@ -61,8 +61,12 @@ function ImageGallery() {
     const [quoteToShow, setQuoteToShow] = useState("");
     const [lightboxDisplay, setLightBoxDisplay] = useState(false);
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     const imageCards = dataset.map((data) => (
-        <span ><img width="150px" alt='card' className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
+        <span ><img style={{width: "150px"}} alt='card' className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
     ));
 
     const showImage = (image, text, quote) => {
@@ -75,7 +79,6 @@ function ImageGallery() {
     const hideLightBox = () => {
         setLightBoxDisplay(false);
     };
-
 
     return (
         <div>
