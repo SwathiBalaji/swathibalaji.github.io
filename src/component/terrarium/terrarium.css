@@ -3,10 +3,10 @@
     width: 1250px;
     align-items: center;
     padding-left: 100px;
-    font-family: "Bell MT";  
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: #303030;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height:40px;
     font-weight: normal;
     text-align: left;
 }

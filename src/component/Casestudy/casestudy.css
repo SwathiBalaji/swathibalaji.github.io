@@ -1,3 +1,7 @@
 video {
     filter:brightness(80%);
 }
+
+#canvas-1 {
+    height: 1000px;
+}

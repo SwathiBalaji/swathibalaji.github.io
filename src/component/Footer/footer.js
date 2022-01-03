@@ -20,7 +20,7 @@ class Footer extends Component {
                     <Link to="/">swathi balaji</Link>
                 </Col>
 
-                <Col className='link'><a href='https://www.instagram.com/swathi.ui/' target="_blank" rel="noreferrer">Instgram</a></Col>
+                <Col className='link'><a href='https://www.instagram.com/swathi.ui/' target="_blank" rel="noreferrer">Instagram</a></Col>
                 <Col className='link'><a href='https://www.linkedin.com/in/swathibalaji963/' target="_blank" rel="noreferrer">LinkedIn</a></Col>
                 <Col className='link'><a href='https://medium.com/@swathi963' target="_blank" rel="noreferrer">Medium</a></Col>
                 <Col className='link'><a href='https://dribbble.com/bri_pearl' target="_blank" rel="noreferrer">Dribbble</a></Col>

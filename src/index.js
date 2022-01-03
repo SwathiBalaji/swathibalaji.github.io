@@ -13,7 +13,7 @@ import hewnfrost from "./component/HewnFrost/hewnfrost";
 const Routing = () => {
     return(
       <Router>
-        <Header/>
+        
         <Switch>
           <Route exact path="/" component={Home} />
 

@@ -6,6 +6,7 @@
     "proxy": "http://localhost:8080",
     "dependencies": {
         "@ant-design/icons": "4.3.0",
+        "@fullpage/react-fullpage": "^0.1.19",
         "antd": "4.10.0",
         "aos": "^2.3.4",
         "axios": "^0.21.4",

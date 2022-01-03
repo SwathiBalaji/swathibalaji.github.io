@@ -2,23 +2,25 @@
 
 
 .homepage {
-    background-image: url("../../images/home/bg.png");
-    background-size: 55vw;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    font-family: "Bell MT";
-    font-size: 25px;
-    line-height: 450%;    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    background-color: #F6F1EB;
+
+   
     
 }
 
-.homebg {
-  background-image: linear-gradient(#FBEDD9, white)
+.subheading-home {
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(-20px);
 }
 
-.tabs, .terrarium, .hnf {
-    padding: 50px;
-}
 
 .home-banner
 {
@@ -28,33 +30,18 @@
     font-size: 120px;
 }
 
-.circle {
-    animation: rotation 2s infinite linear;
-    -webkit-animation: rotation 2s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(359deg);
-    }
-}
-
 .projects {
    
-   align-items: center;
-   justify-content: center;
+   width: 500px;
+   border-width: 2px;
+   margin-left: 55%;
+   padding: 80px 50px;
+   color: white;
+
    
 }
 
-.aboutme {
-   
-   padding: 200px;
-   padding-top: 0px;
 
-}
 
 .title-text {
     font-family: bely-display, sans-serif;
@@ -63,15 +50,15 @@
     font-size: 60px;
 }
 
-.about-me {
-    font-family: "Bell MT";
-    font-size: 25px;
-    line-height: 150%;
+.ant-row.aboutme {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 
 }
 
 .body-text-large {
-    font-family: "Bell MT";
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-size: 30px;
     line-height: 150%;
 }
@@ -79,46 +66,114 @@
 
   .container {
     position: relative;
-    width: 600px;
+    width: 300px;
   }
   
   .image {
     display: block;
-    width: 600px;
+    width: 400px;
     height: auto;
+    transition: .3s;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #FBEDD9;
-  }
+.socials {
+  padding: 50px;
+}
   
-  .container:hover .overlay {
-    opacity: 0.8;
-  }
 
-  .text {
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Bell MT";
+.button-tabs {
+  opacity: 1;
+  background-color: #E874EF;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:fit-content
+}
+
+.button-hnf {
+  opacity: 1;
+  background-color: #FFC40E;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:fit-content
+}
+
+.button-ter {
+  opacity: 1;
+  background-color: #6CA447;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:fit-content
+}
+
+.button-ux {
+  opacity: 1;
+  background-color: #FF3F6C;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:fit-content
+}
+
+
+
+.section.section2 {
+  background-image: url('../../images/home/tabsbg.png');
+  text-align: left;
+}
+
+.section.section3 {
+  background-image: url('../../images/home/hnfbg.png');
+  text-align: left;
+}
+
+.section.section4 {
+  background-image: url('../../images/home/uxbg.png');
+  text-align: left;
+}
+
+.section.section5 {
+  background-image: url('../../images/home/terbg.png');
+  text-align: left;
+}
+
+.heading-home {
+  font-family: "Bell MT";
     font-size: 50px;
     line-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+}
+  
+.image {
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+.go-top {
+  font-size: 35px;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.go-top:hover {
+  cursor: pointer;
+}
 
   
 

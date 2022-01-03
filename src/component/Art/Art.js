@@ -1,7 +1,7 @@
 import './Art.css'
 
 
-import React from "react";
+import React, { Fragment } from "react";
 import kawai from '../../images/art/kawai.svg'
 import avacado from '../../images/art/avacado.png'
 import bri from '../../images/art/bri.svg'
@@ -21,6 +21,7 @@ import { Row, Col } from 'antd';
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import Text from 'antd/lib/typography/Text';
+import Header from '../Header/header';
 const { useState } = React;
 
 const dataset = [
@@ -45,10 +46,12 @@ AOS.init({
 });
 function Art() {
     return (
+        <Fragment>
+        <Header></Header>
         <Row>
         <Col className="art-content">
             <ImageGallery /></Col>
-        </Row>
+        </Row></Fragment>
     );
 }
 
