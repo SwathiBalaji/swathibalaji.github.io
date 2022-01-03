@@ -14,7 +14,7 @@ import single from '../../images/single.png'
 import 'antd/dist/antd.css';
 
 import ProgressBar from "react-scroll-progress-bar";
-import Header from '../Header/Header';
+import Header from '../Header/header';
 import { Link } from 'react-router-dom';
 
 AOS.init({

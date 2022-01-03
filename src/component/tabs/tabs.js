@@ -1,4 +1,4 @@
-import './Tabs.css'
+import './tabs.css'
 
 import React, { Component } from "react";
 import { Divider, Image, Tooltip } from "antd"
@@ -30,7 +30,7 @@ import {
 } from '@ant-design/icons';
 
 import ProgressBar from "react-scroll-progress-bar";
-import Header from '../Header/Header';
+import Header from '../Header/header';
 
 AOS.init({
     duration: 80

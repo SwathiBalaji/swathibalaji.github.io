@@ -1,4 +1,4 @@
-import './Home.css'
+import './home.css'
 
 import React, { Component } from "react";
 import 'antd/dist/antd.css';

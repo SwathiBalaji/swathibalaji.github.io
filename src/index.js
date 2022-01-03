@@ -3,14 +3,14 @@ import './component/App.css'
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./component/Home/Home";
+import Home from "./component/Home/home";
 import Art from "./component/Art/Art";
-import tabs from "./component/Tabs/Tabs";
-import terrarium from "./component/terrarium/Terrarium";
-import Footer from "./component/Footer/Footer";
+import tabs from "./component/Tabs/tabs";
+import terrarium from "./component/terrarium/terrarium";
+import Footer from "./component/Footer/footer";
 
-import casestudy from "./component/Casestudy/Casestudy";
-import hewnfrost from "./component/HewnFrost/Hewnfrost";
+import casestudy from "./component/Casestudy/casestudy";
+import hewnfrost from "./component/HewnFrost/hewnfrost";
 
 const Routing = () => {
   return (

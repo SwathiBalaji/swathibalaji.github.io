@@ -21,7 +21,7 @@ import { Row, Col } from 'antd';
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import Text from 'antd/lib/typography/Text';
-import Header from '../Header/Header';
+import Header from '../Header/header';
 const { useState } = React;
 
 const dataset = [

@@ -1,4 +1,4 @@
-import './Terrarium.css'
+import './terrarium.css'
 
 import React, { Component } from "react";
 import { Col, Image, Row, Divider } from "antd"
@@ -27,7 +27,7 @@ import result2 from '../../images/terrarium/result2.mp4'
 import result3 from '../../images/terrarium/result3.mp4'
 import ProgressBar from "react-scroll-progress-bar";
 import { Chrono } from "react-chrono";
-import Header from '../Header/Header';
+import Header from '../Header/header';
 
 const items = [{ title: "Aug 2020" }, { title: "Nov 2020" }, { title: "Feb 2021" }, { title: "May 2021" }, { title: "June 2021" }
 ]

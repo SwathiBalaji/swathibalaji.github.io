@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 
 import 'antd/dist/antd.css';
 import divider from '../../images/divider.svg'
-import Header from '../Header/Header';
+import Header from '../Header/header';
 
 import ProgressBar from "react-scroll-progress-bar";
 
