@@ -8,6 +8,7 @@ import Art from "./component/Art/Art";
 import tabs from "./component/Tabs/Tabs";
 import terrarium from "./component/terrarium/Terrarium";
 import Footer from "./component/Footer/Footer";
+
 import casestudy from "./component/Casestudy/Casestudy";
 import hewnfrost from "./component/HewnFrost/Hewnfrost";
 
