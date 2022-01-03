@@ -1,10 +1,7 @@
 import './casestudy.css'
 
 import React, { Component } from "react";
-import { Col,  Row } from "antd"
 
-
-import uxbanner from '../../images/ux/uxbanner.png'
 import myntra from '../../images/ux/myntra.png'
 import zara from '../../images/ux/zara.png'
 import impcomp from '../../images/ux/impcomp.png'
@@ -37,7 +34,7 @@ class casestudy extends Component {
                 <Header></Header>
                 <div className='title'>UX Case Study - Myntra Site</div>
                 <div className='banner' style={{ padding: "0px" }}>
-                    <div style={{ fontSize: "14px" }}><img src={single} width="30px"></img> <span style={{color: "green"}}>Personal Project</span> &nbsp; <span style={{color: "grey"}}>June 2019</span>  &nbsp; &#9679; &nbsp; 5 min read </div>
+                    <div style={{ fontSize: "14px" }}><img alt='single' src={single} width="30px"></img> <span style={{color: "green"}}>Personal Project</span> &nbsp; <span style={{color: "grey"}}>June 2019</span>  &nbsp; &#9679; &nbsp; 5 min read </div>
                 </div>
                 
 
@@ -63,7 +60,7 @@ class casestudy extends Component {
            <img src={redesignux} alt='redesigned ux' width="650px" style={{paddingTop: "50px"}}></img>
            <p style={{fontSize: "15px", fontStyle: "italic"}}>See below for a low-fidelity prototype. You can scroll on the Product details section</p>
             </div>
-            <div><div style={{textAlign: "center"}}><iframe width="1500" height="550" src="https://xd.adobe.com/embed/73b453be-aef2-45fa-b6d7-8dbeb9ea2d10-26e7/" frameborder="0" allowfullscreen></iframe></div></div>
+            <div><div style={{textAlign: "center"}}><iframe title='UX Case Study' width="1500" height="550" src="https://xd.adobe.com/embed/73b453be-aef2-45fa-b6d7-8dbeb9ea2d10-26e7/" frameborder="0" allowfullscreen></iframe></div></div>
             </div>
 
 

@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from './component/Header/header';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./component/Home/home";
 import Art from "./component/Art/Art";

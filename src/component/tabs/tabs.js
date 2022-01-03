@@ -2,9 +2,7 @@ import './tabs.css'
 
 import React, { Component } from "react";
 import { Col, Divider, Image, Row, Tooltip } from "antd"
-import share from '../../images/share.png'
 import { Magnifier } from "react-image-magnifiers";
-import wireframeVid from '../../videos/wireframeVid.mp4'
 
 import styleguide from '../../images/styleguide.svg'
 import james from '../../images/james.png'
@@ -27,16 +25,11 @@ import fig3 from '../../images/tabsux/fig3.png'
 import fig4 from '../../images/tabsux/fig4.png'
 import divider from '../../images/divider.svg'
 import {
-    PlusOutlined,
-    MinusOutlined,
     ZoomInOutlined
 } from '@ant-design/icons';
 
-import { Collapse } from 'antd';
 import ProgressBar from "react-scroll-progress-bar";
 import Header from '../Header/header';
-
-const { Panel } = Collapse;
 
 AOS.init({
     duration: 80
@@ -56,7 +49,7 @@ class tabs extends Component {
                 <Header></Header>
                 <div className="title">Tabs - a social news network</div>
                 <div className='banner' style={{ padding: "0px" }}>
-                    <div style={{ fontSize: "14px" }}><img src={single} width="30px"></img> <span style={{color: "green"}}>Personal Project</span> &nbsp; <span style={{color: "grey"}}>December 2019</span>  &nbsp; &#9679; &nbsp; 10 min read </div>
+                    <div style={{ fontSize: "14px" }}><img alt='single' src={single} width="30px"></img> <span style={{color: "green"}}>Personal Project</span> &nbsp; <span style={{color: "grey"}}>December 2019</span>  &nbsp; &#9679; &nbsp; 10 min read </div>
                 </div>
                 
 
@@ -211,7 +204,7 @@ class tabs extends Component {
 
                 <div className='closerLook'>
                     <div className="sub-heading" >Closer Look</div>
-                    <iframe src="https://drive.google.com/file/d/1zO7E6gntpDsw8ZP4pYNKnIrnWXWk7J1-/preview" width="640" height="400" allow="autoplay"></iframe>
+                    <iframe title='Tabs' src="https://drive.google.com/file/d/1zO7E6gntpDsw8ZP4pYNKnIrnWXWk7J1-/preview" width="640" height="400" allow="autoplay"></iframe>
                     
                     <div style={{paddingTop: "20px"}}><span className='tags'>UI Design</span>    <span className='tags'>UX Research</span>    <span className='tags'>Logotyping</span>    <span className='tags'>Style Guide</span>
                     </div>

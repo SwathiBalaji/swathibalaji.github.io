@@ -3,17 +3,12 @@ import './home.css'
 import React, { Component } from "react";
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom'
-import { Row, Col, Button } from 'antd';
-import { UpOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';
 import icon from '../../images/header/logo.png'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
-import tabs from '../../images/home/tabs.svg'
 import coverimg from '../../images/home/coverimg.png'
-import terrarium from '../../images/home/terrarium.svg'
-import hnf from '../../images/home/hnf.svg'
-import myntra from '../../images/home/myntra.svg'
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 
@@ -21,13 +16,8 @@ import instagram from '../../images/home/instagram.png'
 import medium from '../../images/home/medium.png'
 import linkedin from '../../images/home/linkedin.png'
 
-
-
-
-import circle from '../../images/home/circle.png'
-import arrow from '../../images/home/arrow.png'
 import myface from '../../images/home/myface.png'
-import Header from '../Header/header';
+
 
 AOS.init({
     duration: 80
@@ -65,7 +55,7 @@ class Home extends Component {
 
                 <Col flex="auto" className='art'><a href='https://drive.google.com/file/d/1vYEwVdYfdsYyMQSMqbjYKd7dbxkWeeoE/view?usp=sharing' target="_blank" rel="noreferrer">cv</a></Col>
             </Row>
-                                    <img className='image' src={coverimg} alt='tabs' ></img>
+                                    <img className='image' src={coverimg} alt='cover' ></img>
                                     <div className='subheading-home'>Hello, I am Swathi</div>
                                 </div>
 
@@ -115,12 +105,12 @@ class Home extends Component {
                                 <div className="section section6">
                                    
 
-                                        <Row className='aboutme'><Col><img src={myface}  style={{"animation": "none"}} className='image' width="250px"></img></Col>
+                                        <Row className='aboutme'><Col><img alt='face' src={myface}  style={{"animation": "none"}} className='image' width="250px"></img></Col>
                                         <Col style={{width: "600px", padding: "50px", paddingRight: "0px"}}>I am a human-conscious and human-centric UI/UX designer and developer. From resonating with the various visual indulgence present in digital interfaces to studying the principles and curriculum behind good design- my perspective as a creator is ever-evolving. UI/UX Design is the ideal intersection of my interest in technology, my passion to help people, and my distinctive craftsmanship. I have instilled in myself to be positive and approach any endeavor with all heart and no doubt. My resourcefulness coupled with my academic and practical knowledge makes me an ideal candidate for your program.</Col>
                                         <Col className='socials'>
-                                        <Row style={{padding: "10px"}}><img width="30px" src={instagram}/></Row>
-                                        <Row style={{padding: "10px"}}><img width="30px" src={linkedin}/></Row>
-                                        <Row style={{padding: "10px"}}><img width="30px" src={medium}/></Row>
+                                        <Row style={{padding: "10px"}}><img alt='ig' width="30px" src={instagram}/></Row>
+                                        <Row style={{padding: "10px"}}><img alt='linkedIn' width="30px" src={linkedin}/></Row>
+                                        <Row style={{padding: "10px"}}><img alt='medium' width="30px" src={medium}/></Row>
                                         <Row style={{borderRight: "1px solid black", height: "200px", width: "30px"}}></Row></Col>
                                         </Row>
                                         
