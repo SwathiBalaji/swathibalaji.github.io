@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5036ca3e.chunk.css",
-    "main.js": "/static/js/main.ddc25b6f.chunk.js",
-    "main.js.map": "/static/js/main.ddc25b6f.chunk.js.map",
+    "main.css": "/static/css/main.a5c01ba1.chunk.css",
+    "main.js": "/static/js/main.93eeebf0.chunk.js",
+    "main.js.map": "/static/js/main.93eeebf0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.26096b02.js",
     "runtime-main.js.map": "/static/js/runtime-main.26096b02.js.map",
     "static/css/2.49fdf8ac.chunk.css": "/static/css/2.49fdf8ac.chunk.css",
-    "static/js/2.600c9839.chunk.js": "/static/js/2.600c9839.chunk.js",
-    "static/js/2.600c9839.chunk.js.map": "/static/js/2.600c9839.chunk.js.map",
+    "static/js/2.15d2559a.chunk.js": "/static/js/2.15d2559a.chunk.js",
+    "static/js/2.15d2559a.chunk.js.map": "/static/js/2.15d2559a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.49fdf8ac.chunk.css.map": "/static/css/2.49fdf8ac.chunk.css.map",
-    "static/css/main.5036ca3e.chunk.css.map": "/static/css/main.5036ca3e.chunk.css.map",
-    "static/js/2.600c9839.chunk.js.LICENSE.txt": "/static/js/2.600c9839.chunk.js.LICENSE.txt",
+    "static/css/main.a5c01ba1.chunk.css.map": "/static/css/main.a5c01ba1.chunk.css.map",
+    "static/js/2.15d2559a.chunk.js.LICENSE.txt": "/static/js/2.15d2559a.chunk.js.LICENSE.txt",
     "static/media/avacado.820cf541.png": "/static/media/avacado.820cf541.png",
     "static/media/bannerhnf.a1ac48aa.png": "/static/media/bannerhnf.a1ac48aa.png",
     "static/media/blender-ter.2861309b.png": "/static/media/blender-ter.2861309b.png",
@@ -65,7 +65,6 @@
     "static/media/surrounding.5b618213.png": "/static/media/surrounding.5b618213.png",
     "static/media/team.6410770f.png": "/static/media/team.6410770f.png",
     "static/media/ter-banner.c4dc415c.png": "/static/media/ter-banner.c4dc415c.png",
-    "static/media/terrariumvid2.c8ad4b3c.mp4": "/static/media/terrariumvid2.c8ad4b3c.mp4",
     "static/media/top-view.2cdc874d.png": "/static/media/top-view.2cdc874d.png",
     "static/media/ui.c4173faf.svg": "/static/media/ui.c4173faf.svg",
     "static/media/ui2.3177d32b.svg": "/static/media/ui2.3177d32b.svg",
@@ -77,8 +76,8 @@
   "entrypoints": [
     "static/js/runtime-main.26096b02.js",
     "static/css/2.49fdf8ac.chunk.css",
-    "static/js/2.600c9839.chunk.js",
-    "static/css/main.5036ca3e.chunk.css",
-    "static/js/main.ddc25b6f.chunk.js"
+    "static/js/2.15d2559a.chunk.js",
+    "static/css/main.a5c01ba1.chunk.css",
+    "static/js/main.93eeebf0.chunk.js"
   ]
 }
