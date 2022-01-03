@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./component/Home/home";
 import Art from "./component/Art/Art";
-import tabs from "./component/Tabs/tabs";
+import tabs from "./component/tabs/tabs";
 import terrarium from "./component/terrarium/terrarium";
 import Footer from "./component/Footer/footer";
 
