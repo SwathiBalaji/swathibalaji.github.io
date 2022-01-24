@@ -156,9 +156,6 @@ render() {
 
                 <div className="sub-heading">Prototype</div>
                 <Image  alt='ui design 2' src={uides2}/>
- 
-                <a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" rel='noreferrer' target="_blank" className='protolink'>Click here for User Interaction</a>
-                <a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank" rel='noreferrer' className='protolink'>Click here for Newsletter Interaction</a>
                   
                 <div><img src={divider} alt='divider' className='divider' /></div>
                 
@@ -191,6 +188,9 @@ render() {
                 <span className='tags'>UX Research</span> 
                 <span className='tags'>UI Design</span>    
                 <span className='tags'>Design System</span> 
+                <br/>
+            <a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" rel='noreferrer' target="_blank" className='protolink'>Click here for User Interaction</a> &nbsp;
+            <a href="https://xd.adobe.com/view/305788b6-ba6f-45b4-9833-e11b99455078-6504/" target="_blank" rel='noreferrer' className='protolink'>Click here for Newsletter Interaction</a>
             </div>
 
             <br/><br/>

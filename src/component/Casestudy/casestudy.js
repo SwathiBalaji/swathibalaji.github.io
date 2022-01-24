@@ -52,31 +52,27 @@ render() {
                 <br /><br />
                 <Image alt='zara' src={zara}/>
                 <br /><br />
-                E-commerce platforms do not provide enough information for the user on the Product List page. Quick Views only show images and have little to no information about the product. The catalog of options is seldom curated at the start. Each product page does offer relevant options but the unlisted breadcrumb navigation through different windows can be difficult to trace back. Furthermore, switching through tabs takes the user out of the shopping zone. It can also affect the experience incase of extended load time.
+                E-commerce platforms do not provide enough information for the user on the Product List page. Quick Views only show images and have little to no information about the product. The catalog of options is seldom curated at the start. Each product page does offer relevant options but the unlisted breadcrumb navigation through different windows can be difficult to trace back. Furthermore, switching through tabs takes the user out of the shopping zone. It can also affect the experience in case of extended load time.
                 <br /><br />
                 <Image alt='myntra' src={myntra}/>
            
             <img src={divider} alt='divider' className='divider'/>
 
             <div className="sub-heading">Solution</div>
-                My approach to tackling these issues is to provide the user with the option to perform several actions on one page. After trying several layouts, I believe it would be ideal if a consolidated product page takes up the right half of the Product List page when I product is clicked.
+                My approach to tackling these issues is to provide the user with the option to perform several actions on one page. After trying several layouts, I believe it would be ideal if a consolidated product page takes up the right half of the Product List page when the product is clicked.
                 Simultaneously, the list of products can be updated to align with the user’s needs. The product details component is collapsed once the user clicks on the product listing again. I begin by outlining the important components on the website of Myntra, a major Indian fashion e-commerce company.
                 <br /><br />
                 <Image src={impcomp} alt='important components'/>
                 <br /><br />
                 The goal of the redesign is to keep the integrity of the UX while offering a better experience. Next, I draw out the wireframe and create a basic skeletal interaction between the product card and the product tab. This helps to establish the feasibility of the redesign.
-                I implement the wireframe and redesign the website. The product tab offers product details like price, colors, delivery options, wish list options. Since all e-commerce platforms follow the same interaction model and wireframe, this UI redesign solution can be extended to all other e-commerce platforms.
+                I implement the wireframe and redesign the website. The product tab offers product details like price, colors, delivery options, wishlist options. Since all e-commerce platforms follow the same interaction model and wireframe, this UI redesign solution can be extended to all other e-commerce platforms.
                 <br /><br />
                 <Image src={wireframeux} alt='ux wireframe'/>
                 <br /><br />
                 I offer the product details in a scrollable tab as a form of extended quick view. By doing so, the Call to Action buttons is immediately available to the user. The number of steps to add to cart, to wish list a product, to apply filters, and to search and compare products- is lesser.
                 <br /><br />
                 <Image src={redesignux} alt='redesigned ux'/>
-                <p style={{fontSize: "15px", fontStyle: "italic"}}>See below for a low-fidelity prototype. You can scroll on the Product details section</p>
-            </div>
-
-            <div>
-                <div style={{textAlign: "center"}}><iframe title='UX Case Study' width="1500" height="550" src="https://xd.adobe.com/embed/73b453be-aef2-45fa-b6d7-8dbeb9ea2d10-26e7/" frameborder="0" allowfullscreen></iframe></div>
+                <a className="protolink" href="https://xd.adobe.com/view/73b453be-aef2-45fa-b6d7-8dbeb9ea2d10-26e7/" target="_blank" rel="noreferrer">Click here</a> <span style={{fontSize: "15px", fontStyle: "italic"}}>for a low-fidelity prototype. You can scroll on the Product details section</span>
             </div>
 
             <div className='closerLook'>

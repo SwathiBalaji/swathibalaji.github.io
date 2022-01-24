@@ -43,7 +43,8 @@ class Hewnfrost extends Component {
             <img alt='hew and frost banner' src={bannerhnf} className="ui-img-ter"></img>
             <br/><br/>
 
-            <div className='banner'>            
+            <div className='banner'> 
+            <br/>           
                 <div className="title">Hew and Frost - Web Design</div>   
                 <span style={{padding: "10px", paddingLeft: "0px"}}><img alt='single' src={team} style={{width: "30px"}}></img></span>
                 <span style={{color: "green"}}>Freelance Group Project</span> 
@@ -51,7 +52,7 @@ class Hewnfrost extends Component {
             </div>  
 
             <div className='things'>
-                <br/><br/>
+                <br/>
                 Hew and Frost is my first freelance project. The client wanted me to create an interface to cope with the growing demand for orders for their Instagram-based small business. Since there is a lack of consistency when communicating via WhatsApp, she wanted a portfolio website to place orders and showcase her desserts. She also wanted a blog and gallery to showcase her other creative interests. Since she had an already established brand, my first task was to align my planning and design to match her aesthetic. I looked through her mood boards, her dessert packaging, and her Instagram account to deduce the common themes they possessed. I was given the general wireframe as well. Before zeroing down on a theme, I posed my client with different options throughout each iteration. In cases where the client is not sure of the aesthetic, this iterative communication is very helpful. In my case, where my client had a vague idea- it helped me make important design decisions like dark or light theme, font styles, etc.
 
                 <img src={divider} alt='divider' className='divider' />
@@ -72,7 +73,6 @@ class Hewnfrost extends Component {
             <div className="sub-heading">Final Result</div>
                 The final UI was a perfect marriage of contemporary and rich UI with easing navigation. The homepage has a banner image that is present solely to highlight the distinctive artistic abilities of my client when it comes to cake making. Followed by that, the home page has other common components like About Me, Contact Me, FAQ, and Blogs. The homepage of the blog follows the skeletons of popular blogging sites like Medium and Blogger. The Portfolio page was the most exciting for me to design.
                 I implemented the window-like mask to scrollable banner images. This has been growing in popularity among photography portfolio designs. It adds to the luxurious look and feel of the site. The Menu Page had a list of desserts designed to look like menu pamphlets. The Order Form, FAQ Page, etc. also followed a similar theme. It was rewarding to see the client appreciate the outcome. The site will be live by February, 22 to help grow her local business.
-                <p style={{fontSize: "18px", fontStyle: "italic"}}>You can see this low-fidelity prototype embed to know more</p>
                 
                 <img src={divider} alt='divider' className='divider' />
                 
