@@ -1,106 +1,159 @@
 import './Art.css'
 
 
-import React, { Fragment, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import kawai from '../../images/art/kawai.svg'
 import avacado from '../../images/art/avacado.png'
-import bri from '../../images/art/bri.svg'
+import bri from '../../images/art/bri.png'
 import cup from '../../images/art/cupx.png'
 import planet from '../../images/art/glass planet.png'
 import gucci from '../../images/art/gucci.png'
 import makeup from '../../images/art/makeupmockup2.png'
 import sun from '../../images/art/sun.png'
 import mountain from '../../images/art/mountain.png'
-import pc from '../../images/art/plents on pc.svg'
+import pc from '../../images/art/plents on pc.png'
 import metro from '../../images/art/metro.png'
-import room from '../../images/art/room.svg'
+import room from '../../images/art/room.png'
 import puzzle from '../../images/art/puzzle.png'
-import moonchild from '../../images/art/moon.svg'
-import { Row, Col } from 'antd';
+import moonchild from '../../images/art/moonchild.png'
+import clay from '../../images/art/clay.png'
+import makeupiso from '../../images/art/makeupiso.png'
+import murakami from '../../images/art/murakami.png'
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
 
 import AOS from 'aos'
 import "aos/dist/aos.css";
-import Text from 'antd/lib/typography/Text';
 import Header from '../Header/header';
-const { useState } = React;
 
-const dataset = [
-    { image: kawai, text: "Kawai.", },
-    { image: avacado, text: "Avacado.",  },
-    { image: bri, text: "Identity:1", },
-    { image: cup, text: "Aesthetic." },
-    { image: planet, text: "Glass." },
-    { image: gucci, text: "Perception." },
-    { image: makeup, text: "Deconstruct." },
-    { image: sun, text: "Sunrise." },
-    { image: mountain, text: "Sunset." },
-    { image: pc, text: "Identity:2" },
-    { image: metro, text: "Travel." },
-    { image: room, text: "Home." },
-    { image: puzzle, text: "Puzzled." },
-    { image: moonchild, text: "MoonChild." },
-]
+const photos = [
+    {
+        src: cup,
+        width: 4,
+        height: 3
+      },
+
+    {
+      src: avacado,
+      width: 4,
+      height: 3
+    },
+    {
+        src: kawai,
+        width: 4,
+        height: 3,
+      },
+    {
+      src: bri,
+      width: 4,
+      height: 3
+    },
+    {
+        src: gucci,
+        width: 4,
+        height: 3.8
+      },
+    {
+        src: makeup,
+        width: 4,
+        height: 3.2
+      },
+      {
+        src: sun,
+        width: 4,
+        height: 5.2
+      },
+    {
+      src: planet,
+      width: 4,
+      height: 3.8
+    },
+    
+    {
+        src: puzzle,
+        width: 4,
+        height: 5
+      },
+      {
+        src: moonchild,
+        width: 3.5,
+        height: 2.2
+      },
+    {
+      src: mountain,
+      width: 4,
+      height: 5.2
+    },
+    {
+      src: pc,
+      width: 4,
+      height: 3
+    },
+    {
+      src: metro,
+      width: 3.2,
+      height: 6
+    }, 
+    {
+      src: room,
+      width: 4,
+      height: 2.5
+    },
+    {
+        src: clay,
+        width: 4,
+        height: 3
+      },
+      {
+        src: makeupiso,
+        width: 3,
+        height: 2
+      }, 
+      {
+        src: murakami,
+        width: 4,
+        height: 3
+      },
+  ];
+  
 
 AOS.init({
     duration: 80
 });
 function Art() {
+    const [currentImage, setCurrentImage] = useState(0);
+    const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  
+    const openLightbox = useCallback((event, { photo, index }) => {
+      setCurrentImage(index);
+      setViewerIsOpen(true);
+    }, []);
+  
+    const closeLightbox = () => {
+      setCurrentImage(0);
+      setViewerIsOpen(false);
+    }
     return (
-        <Fragment>
-        <Header></Header>
-        <Row>
-        <Col className="art-content">
-            <ImageGallery /></Col>
-        </Row></Fragment>
+        <div><Header></Header>
+        <div className='arts' style={{width: "70%"}}>
+      <Gallery direction={"column"} photos={photos} onClick={openLightbox} />
+      <ModalGateway>
+        {viewerIsOpen ? (
+          <Modal onClose={closeLightbox}>
+            <Carousel
+              currentIndex={currentImage}
+              views={photos.map(x => ({
+                ...x,
+                srcset: x.srcSet,
+                caption: x.title
+              }))}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+    </div>
+    </div>
     );
 }
 
-function ImageGallery() {
-    const [imageToShow, setImageToShow] = useState("");
-    const [textToShow, setTextToShow] = useState("");
-    const [quoteToShow, setQuoteToShow] = useState("");
-    const [lightboxDisplay, setLightBoxDisplay] = useState(false);
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-
-    const imageCards = dataset.map((data) => (
-        <span ><img style={{width: "150px"}} alt='card' className="image-card" onClick={() => showImage(data.image, data.text, data.quote)} src={data.image} /></span>
-    ));
-
-    const showImage = (image, text, quote) => {
-        setImageToShow(image);
-        setTextToShow(text);
-        setQuoteToShow(quote);
-        setLightBoxDisplay(true);
-    };
-
-    const hideLightBox = () => {
-        setLightBoxDisplay(false);
-    };
-
-    return (
-        <div>
-            <link href="//db.onlinewebfonts.com/c/bb25f84423b9515a1d475d02d2de6462?family=Bell+MT" rel="stylesheet" type="text/css" />
-                    <link rel="stylesheet" href="https://use.typekit.net/qdb6vxy.css"></link>
-        
-            <div>{imageCards}</div>
-
-            {
-                lightboxDisplay ?
-                    <div id="lightbox" onClick={hideLightBox}>
-                        <Row>
-                            <span><img id="lightbox-img" alt='to show' src={imageToShow}></img></span>
-                            
-                            <Row className="art-title">{textToShow}</Row>
-                            <Row className="art-quote"><Text>{quoteToShow}</Text></Row>
-                            
-                        </Row>
-                    </div>
-                    : ""
-            }
-        </div>
-    );
-}
 export default Art;

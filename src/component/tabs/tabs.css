@@ -66,9 +66,9 @@ table tr th:last-child {
 .ui-img {
     object-fit:cover;
     object-position: left;
-    width:98.9vw;
+    width:98vw;
+    height: 60vh;
     background-color: #FCF8EF;
-    height:500px;
 
 }
 
@@ -87,6 +87,23 @@ table tr th:last-child {
 
 .ant-divider-inner-text {
     font-size: 25px;
+}
+
+.see-more {
+    margin-right: 1vw;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media  (max-width: 900px) { 
+    .ui-img {
+        object-fit:cover;
+        object-position: left;
+        width:600px;
+        height: 20vh;
+        background-color: #FCF8EF;
+    
+    }
 }
 
 

@@ -1,15 +1,80 @@
 
-
-
 .homepage {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-size: 18px;
     line-height: 30px;
     text-align: left;
-    background-color: #F6F1EB;
-
    
-    
+}
+
+.header-home {
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+   
+}
+
+#projects {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-img {
+  margin-bottom: 1vw;
+}
+
+.projects-text {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.projects-header
+{
+  font-size: 25px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+.project-col
+{
+  width: 20vw;
+  margin-right: 5vw;
+}
+.project-row-sub {
+  margin-bottom: 3vw;
+  width: 44vw
+}
+
+.project-img-hnf {
+  width: 70vw;
+  margin-bottom: 1vw;
+}
+
+.aboutme-text {
+  width: 30vw;
+}
+
+.aboutme-img {
+  width: 25vw;
+  text-align: center;
+} 
+#aboutme {
+  display:flex; 
+justify-content:center;
+align-items:center;
+height:75vh;
+}
+
+.aboutme-text {
+  padding-left: 5vw;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.aboutme-socials {
+  padding: 10px;
 }
 
 .subheading-home {
@@ -22,39 +87,11 @@
 }
 
 
-.home-banner
-{
-    font-family: bely-display;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 120px;
-}
-
-.projects {
-   
-   width: 500px;
-   border-width: 2px;
-   margin-left: 55%;
-   padding: 80px 50px;
-   color: white;
-
-   
-}
-
-
-
 .title-text {
     font-family: bely-display, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-}
-
-.ant-row.aboutme {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-
 }
 
 .body-text-large {
@@ -70,99 +107,23 @@
   }
   
   .image {
-    display: block;
-    width: 400px;
+    width: 700px;
     height: auto;
     transition: .3s;
-    margin-left: auto;
-    margin-right: auto;
   }
   
 .socials {
-  padding: 50px;
-}
-  
-
-.button-tabs {
-  opacity: 1;
-  background-color: #E874EF;
-  color: white;
-  padding: 10px 30px;
-  font-size: 20px;
-  border-radius: 5px;
-  width:fit-content
+  padding: 3vw;
 }
 
-.button-hnf {
-  opacity: 1;
-  background-color: #FFC40E;
-  color: white;
-  padding: 10px 30px;
-  font-size: 20px;
-  border-radius: 5px;
-  width:fit-content
-}
-
-.button-ter {
-  opacity: 1;
-  background-color: #6CA447;
-  color: white;
-  padding: 10px 30px;
-  font-size: 20px;
-  border-radius: 5px;
-  width:fit-content
-}
-
-.button-ux {
-  opacity: 1;
-  background-color: #FF3F6C;
-  color: white;
-  padding: 10px 30px;
-  font-size: 20px;
-  border-radius: 5px;
-  width:fit-content
-}
-
-
-
-.section.section2 {
-  background-image: url('../../images/home/tabsbg.png');
-  text-align: left;
-}
-
-.section.section3 {
-  background-image: url('../../images/home/hnfbg.png');
-  text-align: left;
-}
-
-.section.section4 {
-  background-image: url('../../images/home/uxbg.png');
-  text-align: left;
-}
-
-.section.section5 {
-  background-image: url('../../images/home/terbg.png');
-  text-align: left;
-}
 
 .heading-home {
   font-family: "Bell MT";
     font-size: 50px;
     line-height: 100%;
+    text-align: left;
 }
   
-.image {
-  -webkit-animation: mover 2s infinite  alternate;
-  animation: mover 2s infinite  alternate;
-}
-@-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
-}
-@keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
-}
 
 .go-top {
   font-size: 35px;
@@ -174,6 +135,72 @@
 .go-top:hover {
   cursor: pointer;
 }
+
+@media  (max-width: 950px) { 
+  .projects {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-img {
+     width:85vw;
+     margin: 0;
+     margin-bottom: 10px;
+  }
+
+  .projects-header {
+    margin-bottom: 10px;
+  }
+
+  .project-text {
+    width: 85vw;
+    margin-bottom: 50px;
+  }
+
+  .project-col {
+    width: 90%;
+  }
+
+  .project-img-hnf, .project-row-sub, .project-row {
+    width: 85vw;
+  }
+
+  .aboutme-img {
+    width: 100%;
+  }
+
+  .aboutme {
+    padding-top: 7vw;
+    width: 100%;
+  }
+
+  .aboutme-text {
+    margin-top: 5vw;
+  }
+}
+
+@media  (min-width: 2500px) {
+  .projects-text {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  
+  .projects-header
+  {
+    font-size: 35px;
+  }
+  
+}
+
+@media (max-width: 1500px) {
+
+  .aboutme-text {
+    width: 50vw;
+  }
+  
+}
+
+
 
   
 

@@ -1,65 +1,12 @@
 
-.art-content {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-    width: 850px;
+.arts img {
+  padding: 20px;
 }
 
-.image-card:hover {
-
-    transform: scale(1.1);
-    cursor: pointer;
-    
+.arts {
+justify-content:center;
+align-items:center;
+height:75vh;
+margin-left: auto;
+margin-right: auto;
 }
-
-.ant-modal-content {
-    align-items: center;
-  }
-  .ant-modal-centered::before {
-    content: unset;
-    align-items: flex-start;
-  }
-
-  .image-card {
-    margin: 20px;
-    object-fit: cover;
-    transition: transform 1s;
-
-  }
-  
-  #lightbox-img {
-    height: 100vh;
-    max-width: 100vw;
-    object-fit: cover;
-  }
-  
-  #lightbox {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .art-title {
-    font-family: "Bell MT";
-    font-size: 80px;
-    font-weight: bolder;
-    letter-spacing: -5px;
-    padding-left: 30px;
-    text-shadow: 2px 2px 3px #9A9A9A;
-}
-
-  .art-quote {
-      font-size: 20px;
-      flex-wrap: wrap;
-      padding-bottom: 40px;
-  }

@@ -11,6 +11,17 @@
     text-align: left;
 }
 
+.terrarium-banner {
+
+    padding: 5vw;
+}
+
+.terrarium-banner-container {
+    background-image: url('../../images/terrarium/ter-banner.png');
+    background-size: cover;
+    height: 115vh;
+}
+
 .ui-img-ter {
    
     width: 98.9vw;
@@ -23,24 +34,16 @@
 .title-ter {
     font-family: bely-display, sans-serif;
     line-height: 90px;
-    width: 1000px;
-    padding-top: 200px;
-    padding-left: 200px;
+    width: 60vw;
     color: white;
     font-size: 70px;
-    position: absolute;
-    z-index: 6;
 }
 
 .sub-title-ter {
     font-size: 30px;
     color: white;
-    padding-left: 200px;
-    padding-top: 500px;
     letter-spacing: 1px;
     font-weight: normal;
-    position: absolute;
-    z-index: 6;
 }
 .sub-title-ter:hover {
     color: white;
