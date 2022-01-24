@@ -8,7 +8,6 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 
 import coverimg from '../../images/home/homepage-banner.png'
-import "fullpage.js/vendors/scrolloverflow";
 import tabs from '../../images/home/tabs.png'
 import ux from '../../images/home/case-study.png'
 import hnf from '../../images/home/hnf.png'
