@@ -85,9 +85,9 @@ render() {
             <br/><br/>
             <div className='things'>
                 See other projects<br/>
-                <Link className='see-more' style={{color: "gold"}} to='/hewandfrost'>Hew and Frost</Link>
-                <Link className='see-more' style={{color: "Purple"}} to='/tabs'>Tabs</Link>
-                <Link className='see-more' style={{color: "green"}} to='/terrarium'>Terrarium</Link>
+                <Link className='see-more' style={{color: "#F6D605"}} to='/hewandfrost'>Hew and Frost</Link>
+                <Link className='see-more' style={{color: "#7E6DF7"}} to='/tabs'>Tabs</Link>
+                <Link className='see-more' style={{color: "#5AC279"}} to='/terrarium'>Terrarium</Link>
             </div>
             <Footer></Footer>
         </div>
